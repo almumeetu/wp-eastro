@@ -1,0 +1,722 @@
+<?php
+/**
+ * Template Name: Home Template
+ * Template Post Type: post, page
+ *
+ * @package WordPress
+ * @subpackage Twenty_Twenty
+ * @since Twenty Twenty 1.0
+ */
+
+get_header();
+?>
+
+            <section id="hero" class="hero-section-2">
+                <div class="hero-text">E•ASTRO
+                    <span class="inner-text">
+                        CO.LTD
+                        <span class="container-svg">
+                            <svg>
+                                <text class="dashed" x="0" y="0" dominant-baseline="hanging">
+                                    <tspan x="0" dy="0">CO.LTD</tspan>
+                                </text>
+                            </svg>
+                        </span>
+                    </span>
+                </div>
+                <div class="shapes">
+                    <div class="shape shape-1"><img src="assets/img/shapes/hero-shape-3.png" alt="shape">
+                    </div>
+                    <div class="shape shape-2"><img src="assets/img/shapes/hero-shape-2.png" alt="shape">
+                    </div>
+                </div>
+                <div class="hero-sidebar">
+                    <div class="sidebar-icon">
+                        <button class="sidebar-trigger open">
+                            <svg width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.300781 0H5.30078V5H0.300781V0Z" fill="currentColor" />
+                                <path d="M0.300781 9H5.30078V14H0.300781V9Z" fill="currentColor" />
+                                <path d="M0.300781 18H5.30078V23H0.300781V18Z" fill="currentColor" />
+                                <path d="M9.30078 0H14.3008V5H9.30078V0Z" fill="currentColor" />
+                                <path d="M9.30078 9H14.3008V14H9.30078V9Z" fill="currentColor" />
+                                <path d="M9.30078 18H14.3008V23H9.30078V18Z" fill="currentColor" />
+                                <path d="M18.3008 0H23.3008V5H18.3008V0Z" fill="currentColor" />
+                                <path d="M18.3008 9H23.3008V14H18.3008V9Z" fill="currentColor" />
+                                <path d="M18.3008 18H23.3008V23H18.3008V18Z" fill="currentColor" />
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="sidebar-social">
+                        <li><a href="#">facebook</a></li>
+                        <li><a href="#">twitter</a></li>
+                        <li><a href="#">instagram</a></li>
+                    </ul>
+                </div>
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-7 col-xl-6">
+                        <div class="hero-img hero-2">
+                            <img src="assets/img/images/hero-img-4.png" alt="hero">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-xl-6">
+                        <div class="hero-info ">
+                            <div class="section-heading">
+                                <h3 class="sub-heading after-none anim-text" style="font-size: 28px;"
+                                    data-text-animation="fade-in" data-duration="1.5">E•ASTRO CO.LTD.</h3>
+                                <h4 class="section-title anim-text">MULTINATIONAL <br> BUSINESS LEADER </h4>
+                                <h4 class="section-title anim-text"> & VALUE CREATOR</h4>
+                                <p>Value creation in the field society and environment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ./ hero-section -->
+
+            <section id="about" class="about-section-2 pt-130 overflow-x">
+                <div class="container">
+                    <div class="row about-wrap-2 gy-lg-0 gy-4 align-items-center">
+                        <div class="col-lg-5 col-md-12">
+                            <div class="about-img-box">
+                                <div class="shapes">
+                                    <img class="shape shape-1" src="assets/img/shapes/about-shape-1.png" alt="about">
+                                    <img class="shape shape-2" src="assets/img/shapes/about-shape-2.png" alt="about">
+                                </div>
+                                <div class="img-1 reveal">
+                                    <img src="assets/img/images/about-img-2.jpg" alt="about">
+                                </div>
+                                <div class="img-2 reveal">
+                                    <img src="assets/img/images/about-img-3.jpg" alt="about">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-12">
+                            <div class="about-content-2 fade-wrapper">
+                                <div class="section-heading">
+                                    <h4 class="sub-heading after-none" data-text-animation="fade-in"
+                                        data-duration="1.5">About Our Company</h4>
+                                    <p class="pr-30">Welcome to E-Astro Company Ltd., a trusted trading company dedicated to
+                                        delivering high-quality products and exceptional service to clients
+                                        worldwide. We are a leading global trading company committed to excellence,
+                                        innovation, and customer satisfaction with 40 years of industry and
+                                        trading expertise. We specialize in trading LPG, LPG tank, raw cotton, raw yarn,
+                                        capital machineries, electronics and Textile Product etc, ensuring
+                                        competitive pricing, reliable supply chains, and seamless logistics. Our
+                                        commitment to integrity, customer satisfaction, and market expertise has
+                                        made us a preferred partner for businesses across South Asia region especially
+                                        in Bangladesh and Myanmar. Whether sourcing, exporting, or
+                                        distributing, we prioritize efficiency, transparency, and long-term
+                                        relationships. At E-Astro Company Ltd, we bridge global markets with
+                                        excellence—empowering your success through strategic trade solutions. Explore
+                                        our offerings and discover how we can empower your business
+                                        growth. Contact us today to discuss your trading needs—we’re here to make global
+                                        commerce simpler, smarter, and more successful for you. </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ./ about-section -->
+
+            <div class="container pt-130 ">
+                <div class="section-heading text-center ">
+                    <h2 class="section-title" data-text-animation="fade-in-right" data-split="char" data-duration="0.6"
+                        data-stagger="0.03">Company
+                        Summary</h2>
+                </div>
+
+                <div class="company-history mb-4">
+                    <div class="history-main-wrapper">
+                        <ul>
+                            <li>
+                                <div class="single-history">
+                                    <h4 class="year">2015</h4>
+                                    <p class="details">2015.11</p>
+                                    <p class="description">Achieved Sales of 100 Million (Exports $100 million)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-history">
+                                    <h4 class="year">2014</h4>
+                                    <p class="details">2014.09</p>
+                                    <p class="description">Gangnam branch move to Head Office (for expanding management
+                                        area)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-history">
+                                    <h4 class="year">2012</h4>
+                                    <p class="details">2012.04</p>
+                                    <p class="description">Awarded the Citation of the Fruit of Love - Warm winter KB
+                                        Kookmin Bank Mokdong 8 Complex Branch Honorary Branch Manager<br>
+                                        Businessman Citation - Small and Medium Business Administrator</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-history">
+                                    <h4 class="year"></h4>
+                                    <p class="details">2012.03</p>
+                                    <p class="description">YangCheon-gu Tax Office Honor<br>
+                                        Awarded Presidential Citation for Commerce and Industry Promotion<br>
+                                        The 39th Day Of Commerce and Industry</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-history">
+                                    <h4 class="year">2010</h4>
+                                    <p class="details">2010.10</p>
+                                    <p class="description">Management innovative middle corporate (Main-Biz) awarded</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-history">
+                                    <h4 class="year"></h4>
+                                    <p class="details">2010.06</p>
+                                    <p class="description">Foreigner (buyer) invite Procedure Simplify Corporate Choose
+                                        - Ministry of Justice Entry Into and Departure From the Country Foreigner
+                                        Regulation head office</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-history">
+                                    <h4 class="year">2009</h4>
+                                    <p class="details">2009.03</p>
+                                    <p class="description">Exemplary Taxpayer Awarded From Director of the National Tax
+                                        Service, Exemplary Taxpayer in Seoul</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-history">
+                                    <h4 class="year">2008</h4>
+                                    <p class="details">2008.12</p>
+                                    <p class="description">Yearly Sales 350 billion (100% export)<br>
+                                        45th Trading Day Awarded "1000 Million Export Towers"<br>
+                                        Awarded President's Award Certification as Trade Promotion Services (exports
+                                        part)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-history">
+                                    <h4 class="year">2007</h4>
+                                    <p class="details">2007.10</p>
+                                    <p class="description">Yangcheon-gu Office Volunteers Day Achieved Appreciation
+                                        Plaque<br>
+                                        Canada, Europe and Other Countries Sports Clothes Export</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-history">
+                                    <h4 class="year"></h4>
+                                    <p class="details">2007.09</p>
+                                    <p class="description">E-Euro Established Gangnam branch (in Gangnamgu Nonhyun-dong)
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-history">
+                                    <h4 class="year">2005</h4>
+                                    <p class="details">2005.03</p>
+                                    <p class="description">Exemplary Taxpayer Awarded From National Tax Service<br>
+                                        Gained honor branch manager in Woori Bank Yangcheon-gu branch</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-history">
+                                    <h4 class="year">2004</h4>
+                                    <p class="details">2004.11</p>
+                                    <p class="description">Trade day in December awarded 300 million Export Towers
+                                        (President Prize)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-history">
+                                    <h4 class="year">2003</h4>
+                                    <p class="details">2003.06</p>
+                                    <p class="description">Head Office Moved to Seoul Yangcheon-gu ShinJeong-dong</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-history">
+                                    <h4 class="year">2002</h4>
+                                    <p class="details">2002.07</p>
+                                    <p class="description">Established E-Euro (in Yeongdeungpo-gu ShingilDong)<br>
+                                        Textile Raw Materials, Textile Machines Export</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-history">
+                                    <h4 class="year">1991</h4>
+                                    <p class="details">1991.04</p>
+                                    <p class="description">Found Daehyun General Produces Handicraft and Export<br>
+                                        Textile Machines, Chemical Production Planning and Exports</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-history">
+                                    <h4 class="year">1985</h4>
+                                    <p class="details"></p>
+                                    <p class="description">Hemplee Rhee trade (in Dongjak-gu Daebang-dong)</p>
+                                </div>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </div>
+
+                <div class="header-Right">
+                    <div class="row gy-lg-0 gy-5">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-item fade-top">
+                                <div class="team-thumb">
+                                    <div class="gradient-color"></div>
+                                    <img src="assets/img/team-2/chairman.jpeg" alt="team">
+                                    <ul class="team-social-2">
+                                        <li class="facebook">
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li class="pinterest">
+                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                        </li>
+                                        <li class="twitter">
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li class="instagram">
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title"><a href="#">Mr. KangOk Lee</a></h3>
+                                    <span>Chairman and CEO</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-item fade-top">
+                                <div class="team-thumb">
+                                    <div class="gradient-color"></div>
+                                    <img src="assets/img/team-2/Md.jpeg" alt="team">
+                                    <ul class="team-social-2">
+                                        <li class="facebook">
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li class="pinterest">
+                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                        </li>
+                                        <li class="twitter">
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li class="instagram">
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title"><a href="#">Mr. KangKook Lee </a></h3>
+                                    <span>Managing Director</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-item fade-top">
+                                <div class="team-thumb">
+                                    <div class="gradient-color"></div>
+                                    <img src="assets/img/team-2/Director-1.jpeg" alt="team">
+                                    <ul class="team-social-2">
+                                        <li class="facebook">
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li class="pinterest">
+                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                        </li>
+                                        <li class="twitter">
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li class="instagram">
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title"><a href="#"> Mr. Young Hwan Lee </a></h3>
+                                    <span>Director</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-item fade-top">
+                                <div class="team-thumb">
+                                    <div class="gradient-color"></div>
+                                    <img src="assets/img/team-2/director-2.jpeg" alt="team">
+                                    <ul class="team-social-2">
+                                        <li class="facebook">
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li class="pinterest">
+                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                        </li>
+                                        <li class="twitter">
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li class="instagram">
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="team-content">
+                                    <h3 class="title"><a href="#">Mr. Seoul Ki Lee</a></h3>
+                                    <span>Director</span </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+            <section class="certificates-awerd pt-120 pb-120">
+                <div class="container">
+                    <div class="section-heading text-center mb-80">
+                        <h2 class="section-title" data-text-animation="fade-in-right" data-split="char"
+                            data-duration="0.6" data-stagger="0.03">Certification and Award State
+                        </h2>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-12 pb-3">
+                            <img src="assets/img/awrds/company-aciement.png" alt="awerd img">
+                        </div>
+                        <div class="col-xl-12 pb-3">
+                            <img src="assets/img/awrds/company-achevemnt-2.png" alt="awerd img">
+                        </div>
+                    </div>
+            </section>
+
+
+            <section class="puchaing-patterns pb-120">
+                <div class="container">
+                    <div class="section-heading text-center mb-80">
+                        <h2 class="section-title" data-text-animation="fade-in-right" data-split="char"
+                            data-duration="0.6" data-stagger="0.03">Puchaing Patterns
+                        </h2>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-12 pb-3">
+                            <img src="assets/img/images/puchaing-patern.png" alt="awerd img">
+                        </div>
+                    </div>
+            </section>
+
+            <section class="puchaing-patterns pb-120">
+                <div class="container">
+                    <div class="section-heading text-center mb-80">
+                        <h2 class="section-title" data-text-animation="fade-in-right" data-split="char"
+                            data-duration="0.6" data-stagger="0.03">Company Location in Bangladesh
+                        </h2>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-12 pb-3">
+                            <img src="assets/img/team-2/Screenshot from 2025-08-04 07-15-22.png" alt="awerd img">
+                        </div>
+                    </div>
+            </section>
+
+            <section id="reward" class="reward-section fade-wrapper pb-120">
+                <div class="container">
+                    <div class="section-heading text-center mb-80">
+                        <h2 class="section-title" data-text-animation="fade-in-right" data-split="char"
+                            data-duration="0.6" data-stagger="0.03">Sales
+
+                         – 107.069 billion won
+                        </h2>
+                    </div>
+                    <div class="reward-items">
+                        <div class="reward-item fade-top">
+                            <div class="bg-img" data-background="assets/img/bg-img/reward-bg.png"></div>
+                            <div class="reward-left">
+                                <h4 class="date">Export amount (ratio) </h4>
+                            </div>
+                            <div class="reward-right-wrap">
+                                <div class="reward-middle">
+                                    <h2 class="title"> KRW 102.869 billion (95.5%)
+                                    </h2>
+                                </div>
+                                <div class="reward-right">
+                                    <span class="number">01</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reward-item fade-top">
+                            <div class="bg-img" data-background="assets/img/bg-img/reward-bg.png"></div>
+                            <div class="reward-left">
+                                <h4 class="date">Total assets </h4>
+                            </div>
+                            <div class="reward-right-wrap">
+                                <div class="reward-middle">
+                                    <h2 class="title">- 16.05 billion won
+
+                                    </h2>
+                                </div>
+                                <div class="reward-right">
+                                    <span class="number">02</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reward-item fade-top">
+                            <div class="bg-img" data-background="assets/img/bg-img/reward-bg.png"></div>
+                            <div class="reward-left">
+                                <h4 class="date"> Capital</h4>
+                            </div>
+                            <div class="reward-right-wrap">
+                                <div class="reward-middle">
+                                    <h2 class="title">- 200 million won
+                                    </h2>
+                                </div>
+                                <div class="reward-right">
+                                    <span class="number">03</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ./ reward-text -->
+
+          <div class="running-text running-1">
+                            <div class="carouselTicker carouselTicker-nav" data-speed="fast">
+                                <ul class="text-anim carouselTicker__list">
+                                    <li>E-ASTRO Co,.</li>
+                                    <li>E-ASTRO Co,.</li>
+                                    <li>E-ASTRO Co,.</li>
+                                    <li>E-ASTRO Co,.</li>
+                                    <li>E-ASTRO Co,.</li>
+                                    <li>E-ASTRO Co,.</li>
+                                    <li>E-ASTRO Co,.</li>
+                                    <li>E-ASTRO Co,.</li>
+                                    <li>E-ASTRO Co,.</li>
+                                </ul>
+                            </div>
+                        </div> 
+            <!-- ./ running-text -->
+
+       <div class="running-text">
+                            <div class="carouselTicker carouselTicker-start" data-speed="fast">
+                                <ul class="text-anim carouselTicker__list">
+                                   <li>E-ASTRO Co,.</li>
+                                    <li>E-ASTRO Co,.</li>
+                                    <li>E-ASTRO Co,.</li>
+                                    <li>E-ASTRO Co,.</li>
+                                    <li>E-ASTRO Co,.</li>
+                                    <li>E-ASTRO Co,.</li>
+                                    <li>E-ASTRO Co,.</li>
+                                    <li>E-ASTRO Co,.</li>
+                                    <li>E-ASTRO Co,.</li>
+                                </ul>
+                            </div>
+                        </div> 
+            <!-- ./ running-text -->
+
+
+            <section class="about-section-3">
+                <div class="about-wrap-3" data-background="assets/img/bg-img/about-bg.png">
+                    <div class="about-text">
+                    </div>
+                    <div class="container">
+                        <div class="row gy-lg-0 gy-4 align-items-center">
+                            <div class="col-lg-5 col-md-12">
+                                <div class="about-img-items">
+                                    <div class="about-img reveal">
+                                        <img class="about-img img-1" src="assets/img/images/about-img-4.png" alt="img">
+                                    </div>
+                                    <div class="about-thumb-2 reveal">
+                                        <img class="about-img img-2" src="assets/img/images/about-img-5.png" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-md-12">
+                                <div class="about-content-3 fade-wrapper">
+                                    <div class="section-heading mb-0">
+                                        <h2 class="section-title text-justify" data-text-animation="fade-in-right" data-split="char"
+                                            data-duration="0.6" data-stagger="0.03">Our
+                                            trading business is a company that exports 100% through
+                                            intermediary trade and general trade.
+
+                                        </h2>
+                                        <p class="fade-top">*Intermediate Trade** refers to importing goods
+                                            for the purpose of exporting.
+                                            This refers to exports and imports that are not brought in from
+                                            a place other than a bonded area or a place with permission for
+                                            a device outside of a bonded area or a free trade zone.
+                                            <br>
+                                            ntermediary trade is a trade in which an intermediary trader
+                                            exports goods.
+                                            This is a transaction whereby one imports at one's own risk and
+                                            expense and then exports it to a third country to make a profit.
+
+                                            <br>Therefore, import contracts and export contracts are
+                                            completely separate.
+                                            The brokerage earns the difference between the import and export
+                                            amounts as a profit.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ./ about-section -->
+
+
+            <section class="container arcitace pt-120 pb-80">
+                <div class="row">
+
+                    <!-- Petroleum Section -->
+                    <div class="col-12 col-md-6">
+                        <div class="section-block">
+                            <h5 class="section-title text-justify">Petrochemical</h5>
+                            <p>Petroleum Item and petrochemicals: Lubricating oil Bitumen</p>
+                            <img src="assets/img/agriculture/1.png" alt="Petroleum" class="section-img">
+                        </div>
+                    </div>
+
+                    <!-- Agriculture Section -->
+                    <div class="col-12 col-md-6">
+                        <div class="section-block">
+                            <h5 class="section-title text-justify">
+                                Agricultural Products</h5>
+                            <p>Agriculture Item: Grain crop / Wheat / Cooking oil / Animal food.</p>
+                            <img src="assets/img/agriculture/2.png" alt="Agriculture" class="section-img">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="cta-section pt-130 pb-120">
+                <div class="container">
+                    <div class="cta-wrap text-center">
+                        <div class="section-heading text-center mb-80">
+                            <h2 class="section-title" data-text-animation="fade-in-right" data-split="char"
+                                data-duration="0.6" data-stagger="0.03">Let’s make something <br>great
+                                together!</h2>
+                        </div>
+                        <div class="office-details">
+                            <div class="row g-4">
+
+                                <!-- E-ASTRO CO.,LTD -->
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card office-card shadow-sm h-100">
+                                        <img src="assets/img/office/1.png" class="card-img-top" alt="E-ASTRO Office">
+                                        <div class="card-body">
+                                            <h5 class="card-title">E-ASTRO CO.,LTD.</h5>
+                                            <p class="card-text">서울시 양천구 목동서로 285</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- HK-Dubai Office -->
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card office-card shadow-sm h-100">
+                                        <img src="assets/img/office/2.png" class="card-img-top" alt="HK-Dubai Office">
+                                        <div class="card-body">
+                                            <h5 class="card-title">HK-Dubai Office</h5>
+                                            <p class="card-text">
+                                                Rm 1303, 13/F Kwong Fat Comm Bldg Hong Kong.<br>
+                                                Office – 319, Al Qaizi Building, Dubai
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Ukraine Office -->
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card office-card shadow-sm h-100">
+                                        <img src="assets/img/office/3.png" class="card-img-top" alt="Ukraine Office">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Ukraine Office</h5>
+                                            <p class="card-text">Blvd Druthby narodiv 14-16, Kyiv, Ukraine
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container pb-120">
+
+                <div class="map-section">
+
+                    <div class="map-responsive">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.879248225262!2d126.86067231538208!3d37.53325427980221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9e55a1857b25%3A0x5b6e761fc4e37d96!2s285%20Mokdongseo-ro%2C%20Yangcheon-gu%2C%20Seoul%2C%20South%20Korea!5e0!3m2!1sen!2sbd!4v1691051234567"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+            <!-- ./ cta-section -->
+
+            <section class="container pb-80 text-center">
+                <!-- Title -->
+                <h2 class="machine-title">
+                    COMPUTERIZED MULTI SWEATER KNITTING MACHINE &<br>
+                    COMPUTERIZED MULTI KNIT SHOES MACHINE &<br>
+                    AUTOMATIC SOCK KNITTING MACHINE
+                </h2>
+
+                <!-- Machine Grid -->
+                <div class="row g-4 machine-grid justify-content-center">
+
+                    <!-- Row 1 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img src="assets/img/mechine-catalog/1.png" alt="Machine 1">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img src="assets/img/mechine-catalog/2.png" alt="Machine 2">
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <img src="assets/img/mechine-catalog/3.png" alt="Machine 3">
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img src="assets/img/mechine-catalog/4.png" alt="Knit Shoe">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img src="assets/img/mechine-catalog/5.png" alt="Factory Line">
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img src="assets/img/mechine-catalog/6.png" alt="Fabric Stack">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <img src="assets/img/mechine-catalog/7.png" alt="Yarn and Fabric">
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <a href="assets/pdf/machine-catalog.pdf" download
+                    class="catalog-btn mt-4 d-inline-block text-decoration-none">
+                    MACHINE CATALOG DOWNLOAD
+                </a>
+            </section>
+
+<?php get_template_part( 'template-parts/footer-menus-widgets' ); ?>
+
+<?php
+get_footer();

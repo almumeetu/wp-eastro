@@ -1,0 +1,559 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Process CSS
+----------------------------------------*/
+.process-section{
+    position: relative;
+    z-index: 1;
+    @include breakpoint(sm){
+        padding-top: 0;
+    }
+    .bg-shape{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+.process-item{
+    @include breakpoint(md){
+        text-align: center;
+    }
+    .process-icon{
+        background-color: var(--rr-color-bg-1);
+        height: 160px;
+        width: 160px;
+        @include flex-center;
+        border-radius: 50%;
+        margin-bottom: 35px;
+        position: relative;
+        @include breakpoint(md){
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        &:before{
+            background-color: transparent;
+            content: "";
+            height: 140px;
+            width: 140px;
+            position: absolute;
+            top: 0;
+            left: -20px;
+            border: 1px solid var(--rr-color-theme-primary);
+            border-radius: 50%;
+            z-index: -1;
+            @include transition (all 0.3s ease-in-out);
+            @include breakpoint(xl){
+                left: -10px;
+            }
+        }
+        img{
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+        }
+        &.icon-2{
+            background-color: #02050A;
+        }
+    }
+    .process-content{
+        .title{
+            font-weight: 700;
+            margin-bottom: 15px;
+            @include breakpoint(lg){
+                font-size: 20px;
+            }
+        }
+        p{
+            @include breakpoint(lg){
+                br{
+                    display: none;
+                }
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    &:hover{
+        .process-icon{
+            &:before{
+                top: 5px;
+                left: 10px;
+            }
+            img{
+                animation-name: wobble-vertical;
+                animation-duration: 1s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: 1;
+            }
+        }
+    }
+}
+
+.process-text{
+    max-width: 1720px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @include breakpoint(md){
+        padding-bottom: 0;
+    }
+    @include breakpoint(sm){
+        padding-top: 40px;
+    }
+}
+
+
+
+// Process 2
+
+.process-box{
+    background-color: var(--rr-color-bg-1);
+    padding: 40px;
+    @include breakpoint(sm){
+        padding: 30px 20px;
+    }
+    .number{
+        color: var(--rr-color-common-white);
+        height: 40px;
+        width: 60px;
+        @include flex-center;
+        border: 1px solid var(--rr-color-theme-primary);
+        border-radius: 10px;
+        margin-bottom: 25px;
+    }
+    .title{
+        font-size: 24px;
+        color: var(--rr-color-common-white);
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    p{
+        margin-bottom: 25px;
+    }
+    .read-more{
+        color: var(--rr-color-theme-primary);
+        font-size: 16px;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        column-gap: 10px;
+        text-transform: capitalize;
+        line-height: 1;
+        i{
+            font-size: 15px;
+            line-height: 1;
+            margin-top: 1px;
+        }
+        &:hover{
+            color: var(--rr-color-common-white);
+        }
+    }
+}
+
+// Process 3
+
+.process-section-3{
+    @include background;
+    width: 100%;
+    height: 100%;
+}
+
+.process-item-2{
+    background-color: var(--rr-color-bg-1);
+    padding: 50px 40px;
+    border: 1px solid var(--rr-color-border-1);
+    position: relative;
+    z-index: 1;
+    @include transition(all 0.3s ease-in-out);
+    &:before{
+        background-color: var(--rr-color-theme-primary);
+        content: "";
+        width: 0%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        @include transition(all 0.4s ease-in-out);
+    }
+    @include breakpoint(lg){
+        padding: 40px 20px;
+    }
+    .icon{
+        height: 120px;
+        width: 120px;
+        @include flex-center;
+        border: 1px solid var(--rr-color-border-1);
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        @include transition(all 0.3s ease-in-out);
+        svg{
+            color: var(--rr-color-common-white);
+            @include transition(all 0.3s ease-in-out);
+        }
+    }
+    span{
+        color: var(--rr-color-theme-primary);
+        font-weight: 600;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 10px;
+        @include transition(all 0.3s ease-in-out);
+    }
+    .title{
+        margin-bottom: 20px;
+        font-weight: 700;
+        @include breakpoint(lg){
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    }
+    p{
+        @include transition(all 0.3s ease-in-out);
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &:hover{
+        &:before{
+            width: 100%;
+            @include transition(all 0.4s ease-in-out);
+        }
+        .icon{
+            background-color: var(--rr-color-common-white);
+            border: 1px solid var(--rr-color-theme-primary);
+            svg{
+                color: var(--rr-color-theme-primary);
+            }
+        }
+        span{
+            color: var(--rr-color-common-white);
+        }
+        p{
+            color: var(--rr-color-common-white);
+        }
+    }
+}
+
+// Process Counter
+
+.process-3{
+    position: relative;
+    z-index: 1;
+    .bg-shape{
+        @include background;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+.process-counter-wrap{
+    &>div:not(:first-of-type){
+        .counter-card{
+            padding-left: 20px;
+            @include breakpoint(md){
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+.process-counter{
+    border-bottom: 1px solid var(--rr-color-border-1);
+    @include breakpoint(sm){
+        padding: 50px 0 20px 0;
+    }
+    .counter-card{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 80px 1fr;
+        grid-gap: 20px;
+        padding: 60px 0;
+        border-right: 1px solid var(--rr-color-border-1);
+        &.card-4{
+            border-right: none;
+        }
+        @include breakpoint(sm){
+            border-right: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+        .icon{
+            background-color: #1E2228;
+            height: 85px;
+            width: 85px;
+            @include flex-center;
+            border-radius: 50%;
+            img{
+                height: 45px;
+                width: 45px;
+            }
+        }
+        .content{
+            .title{
+                font-family: var(--rr-ff-p);
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 1;
+                margin-bottom: 0;
+                .odometer-auto-theme{
+                    font-family: inherit;
+                    line-height: 1;
+                }
+            }
+            p{
+                font-size: 16px;
+                font-weight: 600;
+                text-transform: capitalize;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// Process 4
+
+.process-4{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    @include breakpoint(sm){
+        padding-top: 70px;
+    }
+    .process-bg-shape{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @include breakpoint(sm){
+            display: none;
+        }
+    }
+}
+
+.process-item-3{
+    position: relative;
+    .icon{
+        height: 80px;
+        width: 80px;
+        border: 1px solid #2D343E;
+        @include flex-center;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+    .title{
+        margin-bottom: 15px;
+    }
+    p{
+        margin-bottom: 0;
+    }
+    .number-box{
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 100%);
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        @include flex-center;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        span{
+            font-family: var(--rr-ff-heading);
+            font-size: 80px;
+            color: rgba(255, 255, 255, 0.1);
+            font-weight: 800;
+        }
+    }
+}
+
+// S-work feature-section-13
+.feature-section-13{
+    .feature-wrap{
+        background: #11151C;
+        border: 1px solid #2D343E;
+        margin: 0 70px;
+        @include breakpoint(md){
+            margin: 0;
+        }
+        .feature-item{
+            border-right: 1px solid #2D343E;
+            padding: 120px 107px 110px 107px;
+            @include breakpoint(xxl){
+                padding: 20px;
+            }
+            &.first-item{
+                padding: 120px 90px 110px 190px;
+                position: relative;
+                @include breakpoint(xxl){
+                    padding: 20px;
+                }
+            }
+            .icon{
+                background-color: var(--rr-color-theme-primary);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                width: 80px;
+                height: 80px;                
+            }
+            .content{
+                .count{
+                    font-family: 'Plus Jakarta Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 50px;
+                    color: var(--rr-color-common-white);
+                    margin-top: 25px;
+                    margin-bottom: 0;
+                    span{
+                        font-family: 'Plus Jakarta Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 40px;
+                        line-height: 50px;
+                        color: var(--rr-color-common-white);
+                    }
+                }
+                .title{
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: var(--rr-color-common-white);
+                    margin-bottom: 19px;
+                }
+                p{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #B0B2B7;    
+                    margin-bottom: 0;                
+                }
+            }
+        }
+    }
+}
+
+
+
+// start tech section =================
+.tech_custom_padding {
+    padding: 120px;
+    @include breakpoint(lg) {
+        padding:0;
+     }
+}
+.tech__area{
+    background-color: var(--rr-color-bg-1);
+}
+.tech {
+    &__wrapper {
+        padding: 120px 150px;
+
+        @include breakpoint(lg) {
+            padding:50px;
+         }
+        @include breakpoint(sm) {
+            padding:80px 30px;
+         }
+
+        .section-heading {
+            margin-bottom: 0;
+            .sub-heading{
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &__shape__img {
+        top: 0;
+        right: 0;
+        bottom: 0;
+         img {
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            @include breakpoint(xxl) {
+               opacity: .2;
+            }
+         }
+    }
+
+    &__des {
+        margin-top: 23px;
+    }
+
+    &__list {
+        z-index: 11;
+        position: relative;
+        ul {
+            margin-left: 20px;
+            list-style: none;
+
+            li::before {
+                content: "•";
+                color: #3f5af3;
+                font-size: 20px;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+        }
+    }
+
+    &__btn__wrapper {
+        margin-top: 37px;
+        z-index: 11;
+        position: relative;
+    }
+
+    &__btn {
+        background-color: #3f5af3;
+        font-weight: 700;
+        font-size: 16px;
+        color: #fff;
+        word-spacing: 3px;
+        padding: 14px 38px;
+        &:hover{
+            color: #bebebe;
+        }
+    }
+}
+
+//process-15
+.process-15{
+    @include breakpoint(sm) {
+        padding-top: 70px;
+    }
+    .section-heading{
+        .bg-text{
+            color: rgba(255, 255, 255, 0.05);
+            top: -36%;
+            left: 68%;
+            @include breakpoint(xxl) {
+                display: none;
+             }
+        }
+    }
+}
+
+/* !END: Theme Process CSS */
