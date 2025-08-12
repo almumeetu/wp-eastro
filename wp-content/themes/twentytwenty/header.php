@@ -9,7 +9,8 @@
  * @since Twenty Twenty 1.0
  */
 
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html data-theme="light" class="no-js" lang="en">
 
 <head>
@@ -25,14 +26,14 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 
     <!-- CSS here -->
-<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/assets/css/bootstrap.min.css' ); ?>">
-<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/assets/css/fontawesome.min.css' ); ?>">
-<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/assets/css/venobox.min.css' ); ?>">
-<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/assets/css/odometer.min.css' ); ?>">
-<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/assets/css/nice-select.css' ); ?>">
-<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/assets/css/carouselTicker.css' ); ?>">
-<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/assets/css/swiper.min.css' ); ?>">
-<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/assets/css/main.css' ); ?>">
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/assets/css/bootstrap.min.css' ); ?>">
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/assets/css/fontawesome.min.css' ); ?>">
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/assets/css/venobox.min.css' ); ?>">
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/assets/css/odometer.min.css' ); ?>">
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/assets/css/nice-select.css' ); ?>">
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/assets/css/carouselTicker.css' ); ?>">
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/assets/css/swiper.min.css' ); ?>">
+    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() . '/assets/css/main.css' ); ?>">
 
 </head>
 

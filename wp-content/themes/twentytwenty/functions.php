@@ -808,6 +808,16 @@ function twentytwenty_get_elements_array() {
 		),
 	);
 
+	function eastro_setup() {
+    add_theme_support('title-tag');
+
+	// This tells WordPress: "I have a menu location called Primary Menu"
+	register_nav_menus(array(
+		'primary_menu' => __('Primary Menu', 'eastro')
+	));
+	}
+	add_action('after_setup_theme', 'eastro_setup');
+
 	/**
 	 * Filters Twenty Twenty theme elements.
 	 *

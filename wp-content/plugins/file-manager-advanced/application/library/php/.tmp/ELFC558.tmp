@@ -25,9 +25,9 @@ get_header();
                     </span>
                 </div>
                 <div class="shapes">
-                    <div class="shape shape-1"><img src="<?php echo get_template_directory_uri(); ?>assets/img/shapes/hero-shape-3.png" alt="shape">
+                    <div class="shape shape-1"><img src="assets/img/shapes/hero-shape-3.png" alt="shape">
                     </div>
-                    <div class="shape shape-2"><img src="<?php echo get_template_directory_uri(); ?>assets/img/shapes/hero-shape-2.png" alt="shape">
+                    <div class="shape shape-2"><img src="assets/img/shapes/hero-shape-2.png" alt="shape">
                     </div>
                 </div>
                 <div class="hero-sidebar">
@@ -80,14 +80,14 @@ get_header();
                         <div class="col-lg-5 col-md-12">
                             <div class="about-img-box">
                                 <div class="shapes">
-                                    <img class="shape shape-1" src="<?php echo get_template_directory_uri(); ?>assets/img/shapes/about-shape-1.png" alt="about">
-                                    <img class="shape shape-2" src="<?php echo get_template_directory_uri(); ?>assets/img/shapes/about-shape-2.png" alt="about">
+                                    <img class="shape shape-1" src="assets/img/shapes/about-shape-1.png" alt="about">
+                                    <img class="shape shape-2" src="assets/img/shapes/about-shape-2.png" alt="about">
                                 </div>
                                 <div class="img-1 reveal">
-                                    <img src="<?php echo get_template_directory_uri(); ?>assets/img/images/about-img-2.jpg" alt="about">
+                                    <img src="assets/img/images/about-img-2.jpg" alt="about">
                                 </div>
                                 <div class="img-2 reveal">
-                                    <img src="<?php echo get_template_directory_uri(); ?>assets/img/images/about-img-3.jpg" alt="about">
+                                    <img src="assets/img/images/about-img-3.jpg" alt="about">
                                 </div>
                             </div>
                         </div>
@@ -124,7 +124,7 @@ get_header();
             <div class="container pt-130 ">
                 <div class="section-heading text-center ">
                     <h2 class="section-title" data-text-animation="fade-in-right" data-split="char" data-duration="0.6"
-                        data-stagger="0.03">Our Company
+                        data-stagger="0.03">Company
                         Summary</h2>
                 </div>
 
@@ -392,10 +392,10 @@ get_header();
 
                     <div class="row">
                         <div class="col-xl-12 pb-3">
-                            <img src="<?php echo get_template_directory_uri(); ?>assets/img/awrds/company-aciement.png" alt="awerd img">
+                            <img src="assets/img/awrds/company-aciement.png" alt="awerd img">
                         </div>
                         <div class="col-xl-12 pb-3">
-                            <img src="<?php echo get_template_directory_uri(); ?>assets/img/awrds/company-achevemnt-2.png" alt="awerd img">
+                            <img src="assets/img/awrds/company-achevemnt-2.png" alt="awerd img">
                         </div>
                     </div>
             </section>
@@ -411,7 +411,7 @@ get_header();
 
                     <div class="row">
                         <div class="col-xl-12 pb-3">
-                            <img src="<?php echo get_template_directory_uri(); ?>assets/img/images/puchaing-patern.png" alt="awerd img">
+                            <img src="assets/img/images/puchaing-patern.png" alt="awerd img">
                         </div>
                     </div>
             </section>
@@ -426,7 +426,7 @@ get_header();
 
                     <div class="row">
                         <div class="col-xl-12 pb-3">
-                            <img src="<?php echo get_template_directory_uri(); ?>assets/img/team-2/Screenshot from 2025-08-04 07-15-22.png" alt="awerd img">
+                            <img src="assets/img/team-2/Screenshot from 2025-08-04 07-15-22.png" alt="awerd img">
                         </div>
                     </div>
             </section>
@@ -457,7 +457,7 @@ get_header();
                             </div>
                         </div>
                         <div class="reward-item fade-top">
-                            <div class="bg-img" data-background="<?php echo get_template_directory_uri(); ?>assets/img/bg-img/reward-bg.png"></div>
+                            <div class="bg-img" data-background="assets/img/bg-img/reward-bg.png"></div>
                             <div class="reward-left">
                                 <h4 class="date">Total assets </h4>
                             </div>
@@ -473,7 +473,7 @@ get_header();
                             </div>
                         </div>
                         <div class="reward-item fade-top">
-                            <div class="bg-img" data-background="<?php echo get_template_directory_uri(); ?>assets/img/bg-img/reward-bg.png"></div>
+                            <div class="bg-img" data-background="assets/img/bg-img/reward-bg.png"></div>
                             <div class="reward-left">
                                 <h4 class="date"> Capital</h4>
                             </div>
@@ -528,7 +528,7 @@ get_header();
 
 
             <section class="about-section-3">
-                <div class="about-wrap-3" data-background="<?php echo get_template_directory_uri(); ?>assets/img/bg-img/about-bg.png">
+                <div class="about-wrap-3" data-background="assets/img/bg-img/about-bg.png">
                     <div class="about-text">
                     </div>
                     <div class="container">
@@ -536,10 +536,10 @@ get_header();
                             <div class="col-lg-5 col-md-12">
                                 <div class="about-img-items">
                                     <div class="about-img reveal">
-                                        <img class="about-img img-1" src="<?php echo get_template_directory_uri(); ?>assets/img/images/about-img-4.png" alt="img">
+                                        <img class="about-img img-1" src="assets/img/images/about-img-4.png" alt="img">
                                     </div>
                                     <div class="about-thumb-2 reveal">
-                                        <img class="about-img img-2" src="<?php echo get_template_directory_uri(); ?>assets/img/images/about-img-5.png" alt="img">
+                                        <img class="about-img img-2" src="assets/img/images/about-img-5.png" alt="img">
                                     </div>
                                 </div>
                             </div>
@@ -683,29 +683,29 @@ get_header();
 
                     <!-- Row 1 -->
                     <div class="col-6 col-md-4 col-lg-3">
-                        <img src="<?php echo get_template_directory_uri(); ?>assets/img/mechine-catalog/1.png" alt="Machine 1">
+                        <img src="assets/img/mechine-catalog/1.png" alt="Machine 1">
                     </div>
                     <div class="col-6 col-md-4 col-lg-3">
-                        <img src="<?php echo get_template_directory_uri(); ?>assets/img/mechine-catalog/2.png" alt="Machine 2">
+                        <img src="assets/img/mechine-catalog/2.png" alt="Machine 2">
                     </div>
                     <div class="col-12 col-md-4 col-lg-3">
-                        <img src="<?php echo get_template_directory_uri(); ?>assets/img/mechine-catalog/3.png" alt="Machine 3">
+                        <img src="assets/img/mechine-catalog/3.png" alt="Machine 3">
                     </div>
 
                     <!-- Row 2 -->
                     <div class="col-6 col-md-4 col-lg-3">
-                        <img src="<?php echo get_template_directory_uri(); ?>assets/img/mechine-catalog/4.png" alt="Knit Shoe">
+                        <img src="assets/img/mechine-catalog/4.png" alt="Knit Shoe">
                     </div>
                     <div class="col-6 col-md-4 col-lg-3">
-                        <img src="<?php echo get_template_directory_uri(); ?>assets/img/mechine-catalog/5.png" alt="Factory Line">
+                        <img src="assets/img/mechine-catalog/5.png" alt="Factory Line">
                     </div>
 
                     <!-- Row 3 -->
                     <div class="col-6 col-md-4 col-lg-3">
-                        <img src="<?php echo get_template_directory_uri(); ?>assets/img/mechine-catalog/6.png" alt="Fabric Stack">
+                        <img src="assets/img/mechine-catalog/6.png" alt="Fabric Stack">
                     </div>
                     <div class="col-6 col-md-4 col-lg-3">
-                        <img src="<?php echo get_template_directory_uri(); ?>assets/img/mechine-catalog/7.png" alt="Yarn and Fabric">
+                        <img src="assets/img/mechine-catalog/7.png" alt="Yarn and Fabric">
                     </div>
                 </div>
 
