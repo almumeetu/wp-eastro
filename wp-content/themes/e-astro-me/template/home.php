@@ -11,18 +11,6 @@ get_header(); ?>
 
     
     <section id="hero" class="hero-section-2">
-                <div class="hero-text">E•ASTRO
-                    <span class="inner-text">
-                        CO.LTD
-                        <span class="container-svg">
-                            <svg>
-                                <text class="dashed" x="0" y="0" dominant-baseline="hanging">
-                                    <tspan x="0" dy="0">CO.LTD</tspan>
-                                </text>
-                            </svg>
-                        </span>
-                    </span>
-                </div>
                 <div class="shapes">
                     <div class="shape shape-1"><img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/shapes/hero-shape-3.png" alt="shape">
                     </div>
