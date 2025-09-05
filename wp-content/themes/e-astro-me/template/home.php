@@ -1,169 +1,16 @@
-<!DOCTYPE html>
-<html data-theme="light" class="no-js" lang="en">
+<?php
+/*
+ * Template Name: Home Page
+ * Description: A custom home page template for the theme.
+ */
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+get_header(); ?>
 
-    <!-- Site Title -->
-    <title>E-ASTRO</title>
 
-    <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 
-    <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/venobox.min.css">
-    <link rel="stylesheet" href="assets/css/odometer.min.css">
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/carouselTicker.css">
-    <link rel="stylesheet" href="assets/css/swiper.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
 
-<body>
-    <!-- header-area-start -->
-    <header class="header hero-header header-2 sticky-active">
-        <div class="primary-header">
-            <div class="primary-header-inner">
-                <div class="header-logo d-lg-block">
-                    <a href="index.html">
-                        <img class="logo-dark" src="assets/img/logo/logo-2.png" alt="Logo">
-                        <img class="logo-light" src="assets/img/logo/logo-3.png" alt="Logo">
-                    </a>
-                </div>
-                <div class="header-right-wrap">
-                    <div class="header-menu-wrap">
-                        <div class="mobile-menu-items">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="#">About Us</a>
-                                    <ul class="submenu">
-                                        <li><a href="company.html">About Our Company</a></li>
-                                        <li><a href="company-history.html">Company History</a></li>
-                                        <li><a href="director-list.html">Director List</a></li>
-                                        <li><a href="overdeas.html">Our Overseas Entry</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Product</a>
-                                    <ul class="submenu">
-                                        <li><a href="lpg.html">LPG/LPG Tank</a></li>
-                                        <li><a href="texttile.html">Textile Commodities</a></li>
-                                        <li><a href="machinerie.html">Heavy Machineries and Equement</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="certification.html">Achievement</a> </li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="header-right">
-                            <div class="header-right-item">
-                                <a href="javascript:void(0)" class="mobile-side-menu-toggle"><i
-                                        class="fa-sharp fa-solid fa-bars"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- /.Main Header -->
-
-    <div class="mobile-side-menu">
-        <div class="side-menu-content">
-            <div class="side-menu-head">
-                <div class="side-menu-logo">
-                    <a class="dark-img" href="index.html"><img src="assets/img/logo/logo-2.png" alt="logo"></a>
-                    <a class="light-img" href="index.html"><img src="assets/img/logo/logo-3.png" alt="logo"></a>
-                </div>
-                <button class="mobile-side-menu-close"><i class="fa-regular fa-xmark"></i></button>
-            </div>
-            <div class="side-menu-wrap"></div>
-        </div>
-    </div>
-    <!-- /.mobile-side-menu -->
-    <div class="mobile-side-menu-overlay"></div>
-
-    <div id="sidebar-area" class="sidebar-area">
-        <button class="sidebar-trigger close">
-            <svg class="sidebar-close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px" y="0px" width="16px" height="12.7px" viewBox="0 0 16 12.7"
-                style="enable-background: new 0 0 16 12.7" xml:space="preserve">
-                <g>
-                    <rect x="0" y="5.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.1569 7.5208)" width="16"
-                        height="2"></rect>
-                    <rect x="0" y="5.4" transform="matrix(0.7071 0.7071 -0.7071 0.7071 6.8431 -3.7929)" width="16"
-                        height="2"></rect>
-                </g>
-            </svg>
-        </button>
-        <div class="side-menu-content">
-            <div class="side-menu-logo">
-                <a class="dark-img" href="index.html"><img src="assets/img/logo/logo-2.png" alt="logo"></a>
-                <a class="light-img" href="index.html"><img src="assets/img/logo/logo-3.png" alt="logo"></a>
-            </div>
-            <div class="side-menu-about">
-                <div class="side-menu-header">
-                    <h3>About Us</h3>
-                </div>
-                <p>Welcome to E-Astro Company Ltd., a trusted trading company dedicated to delivering high-quality
-                    products and exceptional service to clients worldwide. We are a leading global trading company
-                    committed to excellence, innovation, and customer satisfaction with 40 years of industry and trading
-                    expertise. We specialize in trading LPG, LPG tank, raw cotton, raw yarn, capital machineries,
-                    electronics and Textile Product etc, ensuring competitive pricing, reliable supply chains, and
-                    seamless logistics. Our commitment to integrity, customer satisfaction, and market expertise has
-                    made us a preferred partner for businesses across South Asia region especially in Bangladesh and
-                    Myanmar. Whether sourcing, exporting, or distributing, we prioritize efficiency, transparency, and
-                    long-term relationships. At E-Astro Company Ltd, we bridge global markets with excellence—empowering
-                    your success through strategic trade solutions. Explore our offerings and discover how we can
-                    empower your business growth. Contact us today to discuss your trading needs—we’re here to make
-                    global commerce simpler, smarter, and more successful for you.</p>
-                <a href="contact.html" class="rr-primary-btn">Contact Us</a>
-            </div>
-            <div class="side-menu-contact">
-                <div class="side-menu-header">
-                    <h3>Contact Us</h3>
-                </div>
-                <ul class="side-menu-list">
-                    <li>
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>KOREA OFFICE - 285, Mokdongseo-Ro, YangCheon-Gu, Seoul, KOREA (08011)</p>
-                    </li>
-                    <li>
-                        <i class="fas fa-phone"></i>
-                        <a href="tel:82-2-2645-5640">82-2-2645-5640</a>
-                    </li>
-                    <li>
-                        <i class="fas fa-envelope-open-text"></i>
-                        <a href="mailto:eastro@eastronew.com">eastro@eastronew.com</a>
-                    </li>
-                </ul>
-            </div>
-            <ul class="side-menu-social">
-                <li class="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li class="instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li class="g-plus"><a href="#"><i class="fab fa-fab fa-google-plus"></i></a></li>
-            </ul>
-        </div>
-    </div>
-    <!--/.sidebar-area-->
-
-    <div id="preloader">
-        <div class="loading" data-loading-text="E.Astro"></div>
-    </div>
-    <!-- ./ preloader -->
-
-    <div id="smooth-wrapper">
-        <div id="smooth-content">
-
-            <section id="hero" class="hero-section-2">
+    
+    <section id="hero" class="hero-section-2">
                 <div class="hero-text">E•ASTRO
                     <span class="inner-text">
                         CO.LTD
@@ -177,9 +24,9 @@
                     </span>
                 </div>
                 <div class="shapes">
-                    <div class="shape shape-1"><img src="assets/img/shapes/hero-shape-3.png" alt="shape">
+                    <div class="shape shape-1"><img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/shapes/hero-shape-3.png" alt="shape">
                     </div>
-                    <div class="shape shape-2"><img src="assets/img/shapes/hero-shape-2.png" alt="shape">
+                    <div class="shape shape-2"><img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/shapes/hero-shape-2.png" alt="shape">
                     </div>
                 </div>
                 <div class="hero-sidebar">
@@ -208,7 +55,7 @@
                 <div class="row align-items-center g-4">
                     <div class="col-lg-7 col-xl-6">
                         <div class="hero-img hero-2">
-                            <img src="assets/img/images/hero-img-4.png" alt="hero">
+                            <img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/images/hero-img-4.png" alt="hero">
                         </div>
                     </div>
                     <div class="col-lg-5 col-xl-6">
@@ -232,11 +79,11 @@
                         <div class="col-lg-5 col-md-12">
                             <div class="about-img-box">
                                 <div class="shapes">
-                                    <img class="shape shape-1" src="assets/img/shapes/about-shape-1.png" alt="about">
-                                    <img class="shape shape-2" src="assets/img/shapes/about-shape-2.png" alt="about">
+                                    <img class="shape shape-1" src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/shapes/about-shape-1.png" alt="about">
+                                    <img class="shape shape-2" src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/shapes/about-shape-2.png" alt="about">
                                 </div>
                                 <div class="img-1 reveal">
-                                    <img src="assets/img/images/about-img-2.jpg" alt="about">
+                                    <img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/images/about-img-2.jpg" alt="about">
                                 </div>
                             </div>
                         </div>
@@ -422,7 +269,7 @@
                             <div class="team-item fade-top">
                                 <div class="team-thumb">
                                     <div class="gradient-color"></div>
-                                    <img src="assets/img/team-2/chairman.jpeg" alt="team">
+                                    <img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/team-2/chairman.jpeg" alt="team">
                                     <ul class="team-social-2">
                                         <li class="facebook">
                                             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -448,7 +295,7 @@
                             <div class="team-item fade-top">
                                 <div class="team-thumb">
                                     <div class="gradient-color"></div>
-                                    <img src="assets/img/team-2/Md.png" alt="team">
+                                    <img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/team-2/Md.png" alt="team">
                                     <ul class="team-social-2">
                                         <li class="facebook">
                                             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -474,7 +321,7 @@
                             <div class="team-item fade-top">
                                 <div class="team-thumb">
                                     <div class="gradient-color"></div>
-                                    <img src="assets/img/team-2/Director-1.png" alt="team">
+                                    <img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/team-2/Director-1.png" alt="team">
                                     <ul class="team-social-2">
                                         <li class="facebook">
                                             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -500,7 +347,7 @@
                             <div class="team-item fade-top">
                                 <div class="team-thumb">
                                     <div class="gradient-color"></div>
-                                    <img src="assets/img/team-2/director-2.png" alt="team">
+                                    <img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/team-2/director-2.png" alt="team">
                                     <ul class="team-social-2">
                                         <li class="facebook">
                                             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -540,10 +387,10 @@
 
                     <div class="row">
                         <div class="col-xl-12 pb-3">
-                            <img src="assets/img/awrds/company-aciement.png" alt="awerd img">
+                            <img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/awrds/company-aciement.png" alt="awerd img">
                         </div>
                         <div class="col-xl-12 pb-3">
-                            <img src="assets/img/awrds/company-achevemnt-2.png" alt="awerd img">
+                            <img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/awrds/company-achevemnt-2.png" alt="awerd img">
                         </div>
                     </div>
             </section>
@@ -558,7 +405,7 @@
 
                     <div class="row">
                         <div class="col-xl-12 pb-3">
-                            <img src="assets/img/images/puchaing-patern.png" alt="awerd img">
+                            <img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/images/puchaing-patern.png" alt="awerd img">
                         </div>
                     </div>
             </section>
@@ -600,7 +447,7 @@
 
 
             <section class="about-section-3">
-                <div class="about-wrap-3" data-background="assets/img/bg-img/about-bg.png">
+                <div class="about-wrap-3" data-background="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/bg-img/about-bg.png">
                     <div class="about-text">
                     </div>
                     <div class="container">
@@ -608,10 +455,10 @@
                             <div class="col-lg-5 col-md-12">
                                 <div class="about-img-items">
                                     <div class="about-img reveal">
-                                        <img class="about-img img-1" src="assets/img/images/about-img-4.png" alt="img">
+                                        <img class="about-img img-1" src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/images/about-img-4.png" alt="img">
                                     </div>
                                     <div class="about-thumb-2 reveal">
-                                        <img class="about-img img-2" src="assets/img/images/about-img-5.png" alt="img">
+                                        <img class="about-img img-2" src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/images/about-img-5.png" alt="img">
                                     </div>
                                 </div>
                             </div>
@@ -662,7 +509,7 @@
                                 data-duration="1.5">Petrochemical</h3>
                                 
                             <p>Petroleum Item and petrochemicals: Lubricating oil Bitumen</p>
-                            <img src="assets/img/agriculture/1.png" alt="Petroleum" class="section-img">
+                            <img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/agriculture/1.png" alt="Petroleum" class="section-img">
                         </div>
                     </div>
 
@@ -672,7 +519,7 @@
                             <h3 class="sub-heading text-justify after-none anim-text" data-text-animation="fade-in"
                                 data-duration="1.5">Agricultural Products</h3>
                             <p>Agriculture Item: Grain crop / Wheat / Cooking oil / Animal food.</p>
-                            <img src="assets/img/agriculture/2.png" alt="Agriculture" class="section-img">
+                            <img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/agriculture/2.png" alt="Agriculture" class="section-img">
                         </div>
                     </div>
 
@@ -692,7 +539,7 @@
                                 <!-- E-ASTRO CO.,LTD -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="card office-card shadow-sm h-100">
-                                        <img src="assets/img/office/1.png" class="card-img-top" alt="E-ASTRO Office">
+                                        <img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/office/1.png" class="card-img-top" alt="E-ASTRO Office">
                                         <div class="card-body">
                                             <h5 class="card-title">E-ASTRO CO.,LTD.</h5>
                                             <p class="card-text">285 Mokdongseo-ro, Yangcheon District, Seoul, South
@@ -704,7 +551,7 @@
                                 <!-- HK-Dubai Office -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="card office-card shadow-sm h-100">
-                                        <img src="assets/img/office/2.png" class="card-img-top" alt="HK-Dubai Office">
+                                        <img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/office/2.png" class="card-img-top" alt="HK-Dubai Office">
                                         <div class="card-body">
                                             <h5 class="card-title">HK-Dubai Office</h5>
                                             <p class="card-text">
@@ -718,7 +565,7 @@
                                 <!-- Ukraine Office -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="card office-card shadow-sm h-100">
-                                        <img src="assets/img/office/3.png" class="card-img-top" alt="Ukraine Office">
+                                        <img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/office/3.png" class="card-img-top" alt="Ukraine Office">
                                         <div class="card-body">
                                             <h5 class="card-title">Ukraine Office</h5>
                                             <p class="card-text">Blvd Druthby narodiv 14-16, Kyiv, Ukraine
@@ -761,29 +608,29 @@
 
                     <!-- Row 1 -->
                     <div class="col-6 col-md-4 col-lg-3">
-                        <img src="assets/img/mechine-catalog/1.png" alt="Machine 1">
+                        <img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/mechine-catalog/1.png" alt="Machine 1">
                     </div>
                     <div class="col-6 col-md-4 col-lg-3">
-                        <img src="assets/img/mechine-catalog/2.png" alt="Machine 2">
+                        <img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/mechine-catalog/2.png" alt="Machine 2">
                     </div>
                     <div class="col-12 col-md-4 col-lg-3">
-                        <img src="assets/img/mechine-catalog/3.png" alt="Machine 3">
+                        <img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/mechine-catalog/3.png" alt="Machine 3">
                     </div>
 
                     <!-- Row 2 -->
                     <div class="col-6 col-md-4 col-lg-3">
-                        <img src="assets/img/mechine-catalog/4.png" alt="Knit Shoe">
+                        <img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/mechine-catalog/4.png" alt="Knit Shoe">
                     </div>
                     <div class="col-6 col-md-4 col-lg-3">
-                        <img src="assets/img/mechine-catalog/5.png" alt="Factory Line">
+                        <img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/mechine-catalog/5.png" alt="Factory Line">
                     </div>
 
                     <!-- Row 3 -->
                     <div class="col-6 col-md-4 col-lg-3">
-                        <img src="assets/img/mechine-catalog/6.png" alt="Fabric Stack">
+                        <img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/mechine-catalog/6.png" alt="Fabric Stack">
                     </div>
                     <div class="col-6 col-md-4 col-lg-3">
-                        <img src="assets/img/mechine-catalog/7.png" alt="Yarn and Fabric">
+                        <img src="<?php echo esc_url(get_template_directory_uri( )); ?>/assets/img/mechine-catalog/7.png" alt="Yarn and Fabric">
                     </div>
                 </div>
 
@@ -794,68 +641,6 @@
                 </a>
             </section>
 
-            <footer class="footer-section footer-2 bg-dark-1">
-                <div class="shape"><img src="assets/img/shapes/footer-shape.png" alt="footer"></div>
-                <div class="container">
-                    <div class="footer-top">
-                        <div class="footer-logo">
-                            <a href="index.html"><img src="assets/img/logo/logo-2.png" alt="logo"></a>
-                        </div>
-                        <p>KOREA OFFICE - 285, Mokdongseo-Ro, YangCheon-Gu, Seoul, KOREA (08011)<br>
-                            ‘TEL 82-2-2645-5640 E-mail eastro@eastronew.com</p>
-                    </div>
 
-                </div>
-                <div class="copyright-area">
-                    <div class="container">
-                        <div class="row copyright-content justify-content-center">
-                            <div class="col-lg-6 col-md-12">
-                                <p class="mb-0">COPYRIGHT © 2025 EASTRO CO, LTD. All RIGHTS RESERVED.</p>
-                            </div>
-                            <div class="col-lg-6 col-md-12">
-                                <ul class="copyright-list">
-                                    <li><a href="contact.html">Security</a></li>
-                                    <li><a href="contact.html">Privacy & Cookie Policy</a></li>
-                                    <li><a href="contact.html">Terms of Services</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <!-- ./ footer-section -->
-
-        </div>
-    </div>
-
-    <div id="scroll-percentage"><span id="scroll-percentage-value"></span></div>
-    <!-- ./ scrollup -->
-
-    <div id="theme-toogle" class="switcher-button">
-        <div class="switcher-button-inner-left"></div>
-        <div class="switcher-button-inner"></div>
-    </div>
-    <!-- ./ theme-toogle -->
-
-    <!-- JS here -->
-    <script src="assets/js/vendor/jquary-3.6.0.min.js"></script>
-    <script src="assets/js/vendor/bootstrap-bundle.js"></script>
-    <script src="assets/js/vendor/imagesloaded-pkgd.js"></script>
-    <script src="assets/js/vendor/waypoints.min.js"></script>
-    <script src="assets/js/vendor/venobox.min.js"></script>
-    <script src="assets/js/vendor/odometer.min.js"></script>
-    <script src="assets/js/vendor/meanmenu.js"></script>
-    <script src="assets/js/vendor/jquery.isotope.js"></script>
-    <script src="assets/js/vendor/swiper.min.js"></script>
-    <script src="assets/js/vendor/split-type.min.js"></script>
-    <script src="assets/js/vendor/gsap.min.js"></script>
-    <script src="assets/js/vendor/scroll-trigger.min.js"></script>
-    <script src="assets/js/vendor/scroll-smoother.js"></script>
-    <script src="assets/js/vendor/jquery.carouselTicker.js"></script>
-    <script src="assets/js/vendor/nice-select.js"></script>
-    <script src="assets/js/slider.js"></script>
-    <script src="assets/js/contact.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
-
-</html>
+<?php
+get_footer();

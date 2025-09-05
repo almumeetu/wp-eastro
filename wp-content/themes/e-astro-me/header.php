@@ -94,7 +94,7 @@
                     'container'      => false,
                     'menu_class'     => '',
                     'items_wrap'     => '<ul>%3$s</ul>',
-                    'walker'         => new WP_Bootstrap_Navwalker(), // Optional: If using Bootstrap nav walker
+                    // 'walker'         => new WP_Bootstrap_Navwalker(), // Optional: If using Bootstrap nav walker
                     'fallback_cb'    => false,
                 )
             );
@@ -170,3 +170,4 @@
 
 <div id="smooth-wrapper">
     <div id="smooth-content">
+		

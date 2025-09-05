@@ -1,0 +1,15 @@
+[05-Sep-2025 08:02:46 UTC] PHP Fatal error:  Uncaught Error: Class "WP_Bootstrap_Navwalker" not found in C:\Users\Saikat\Local Sites\e-astro\app\public\wp-content\themes\e-astro-me\header.php:97
+Stack trace:
+#0 C:\Users\Saikat\Local Sites\e-astro\app\public\wp-includes\template.php(810): require_once()
+#1 C:\Users\Saikat\Local Sites\e-astro\app\public\wp-includes\template.php(745): load_template('C:\\Users\\Saikat...', true, Array)
+#2 C:\Users\Saikat\Local Sites\e-astro\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\Saikat\Local Sites\e-astro\app\public\wp-content\themes\e-astro-me\page.php(15): get_header()
+#4 C:\Users\Saikat\Local Sites\e-astro\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Saikat...')
+#5 C:\Users\Saikat\Local Sites\e-astro\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Saikat...')
+#6 C:\Users\Saikat\Local Sites\e-astro\app\public\index.php(17): require('C:\\Users\\Saikat...')
+#7 {main}
+  thrown in C:\Users\Saikat\Local Sites\e-astro\app\public\wp-content\themes\e-astro-me\header.php on line 97
+[05-Sep-2025 08:23:58 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\Users\Saikat\Local Sites\e-astro\app\public\wp-content\themes\e-astro-me\template\home.php on line 14
+[05-Sep-2025 08:25:05 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\Users\Saikat\Local Sites\e-astro\app\public\wp-content\themes\e-astro-me\template\home.php on line 13
+[05-Sep-2025 08:25:07 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\Users\Saikat\Local Sites\e-astro\app\public\wp-content\themes\e-astro-me\template\home.php on line 13
+[05-Sep-2025 08:25:28 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\Users\Saikat\Local Sites\e-astro\app\public\wp-content\themes\e-astro-me\template\home.php on line 13
