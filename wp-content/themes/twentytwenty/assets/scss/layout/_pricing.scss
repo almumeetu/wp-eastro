@@ -1,0 +1,277 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+    START: Pricing CSS
+----------------------------------------*/
+
+.pricing-tab{
+    .nav-wrap{
+        @include flex-center;
+        .nav-tabs{
+            background-color: var(--rr-color-common-white);
+            display: inline-flex;
+            align-items: center;
+            border-bottom: none;
+            border-radius: 100px;
+            padding: 10px;
+            margin-bottom: 30px;
+            .nav-link{
+                color: var(--rr-color-heading-primary);
+                font-size: 16px;
+                font-weight: 600;
+                border-radius: 100px;
+                border: none;
+                margin: 0 auto;
+                margin-bottom: 0;
+                &.active{
+                    background-color: rgba(63, 90, 243, 0.1);
+                    color: var(--rr-color-heading-primary);
+                    border: none;
+                    margin-bottom: 0;
+                }
+                span{
+                    background-color: var(--rr-color-theme-primary);
+                    color: var(--rr-color-common-white);
+                    font-size: 12px;
+                    padding: 3px 10px;
+                    font-weight: 700;
+                    border-radius: 100px;
+                }
+            }
+        }
+    }
+}
+
+// .tab-pane.active.show .row>div
+.tab-pane.active.show .row{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-name: fade-in-bottom;
+    animation-name: fade-in-bottom;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-fill-mode: both;
+    transition: all 0.8s ease-in-out;
+    transition-duration: 2000ms;
+    animation-delay: 0.1s;
+}
+
+.pricing-item{
+    background-color: var(--rr-color-bg-1);
+    padding: 40px 50px;
+    border: 1px solid var(--rr-color-border-1);
+    @include breakpoint(sm){
+        padding: 30px 20px;
+    }
+    .plan{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+    .price{
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 15px;
+    }
+    span{
+        color: var(--rr-color-text-body);
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .pricing-btn-wrap{
+        margin: 30px 0 35px 0;
+        .pricing-btn{
+            width: 100%;
+            justify-content: center;
+            &:before{
+                background-color: var(--rr-color-common-white);
+            }
+            &:hover{
+                color: var(--rr-color-heading-primary);
+            }
+            &:not(:last-of-type){
+                margin-bottom: 10px;
+            }
+            &:nth-child(2){
+                background-color: var(--rr-color-common-white);
+                color: var(--rr-color-heading-primary);
+                &:before{
+                    background-color: var(--rr-color-theme-primary);
+                }
+                &:hover{
+                    color: var(--rr-color-common-white);
+                }
+            }
+        }
+    }
+    .feature{
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    p{
+        font-size: 16px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+.pricing-item-wrap{
+    margin-left: 50px;
+    @include breakpoint(md){
+        margin-left: 0;
+    }
+}
+
+.pricing-item-2{
+    background-color: var(--rr-color-bg-1);
+    padding: 40px 100px 40px 50px;
+    @include flex-vertical-center;
+    column-gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    @include breakpoint(sm){
+        padding: 40px 20px;
+    }
+    &:not(:last-of-type){
+        margin-bottom: 24px;
+    }
+    .pricing-left{
+        .price{
+            font-size: 48px;
+            color: var(--rr-color-theme-primary);
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+        .title{
+            font-size: 24px;
+            color: var(--rr-color-common-white);
+            margin-bottom: 30px;
+        }
+        .rr-primary-btn{
+            padding: 22px 50px;
+        }
+    }
+    .pricing-list{
+        list-style: none;
+        li{
+            @include flex-vertical-center;
+            column-gap: 10px;
+            i{
+                color: var(--rr-color-theme-primary);
+            }
+            &:not(:last-of-type){
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+
+// S-work pricing 14
+.py-200 {
+    padding: 100px 0;
+}
+
+.pricing {
+    &__card {
+        border: 1px solid #2d343e;
+        padding: 60px 60px 60px 51px;
+        background: #11151C;
+        @include breakpoint(sm) {
+            padding: 30px;
+        }
+    }
+
+    &__content_wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        .pricing__sub-title {
+            font-weight: 600;
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .pricing__curency {
+            font-weight: 700;
+            font-size: 40px;
+            color: #fff;
+
+            sub {
+                font-weight: 400;
+                font-size: 16px;
+            }
+        }
+
+        .pricing__badge_text {
+            font-weight: 600;
+            font-size: 16px;
+            color: #3f5af3;
+            border: 1px solid #3f5af3;
+            border-radius: 100px;
+            background-color: #fff;
+            padding: 7px 21px;
+            display: inline-block;
+
+        }
+    }
+
+    &__list {
+        padding: 25px 0;
+        margin-top: 27px;
+        border-top: 1px solid #2d343e;
+
+        .pricing__list_title {
+            font-weight: 600;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        ul {
+            padding-left: 20px;
+
+            li {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 212%;
+                letter-spacing: -0.02em;
+                color: #b0b2b7;
+            }
+        }
+    }
+    &__btn__wrap {
+        .rr-primary-btn{
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
+.pricing_z_index {
+    z-index: 99;
+    position: relative;
+}
+
+.overley__color {
+    position: relative;
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #000000;
+        background: linear-gradient(0deg, rgba(0, 0, 0, .98) 0%, rgba(28, 34, 61, 0.96) 100%);
+
+    }
+}
+/* !END: Pricing CSS */

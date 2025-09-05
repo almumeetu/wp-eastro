@@ -1,0 +1,126 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+    START: RTL CSS
+----------------------------------------*/
+
+.rtl {
+    direction: rtl;
+}
+
+.rtl .header .primary-header-inner .header-menu-wrap ul .menu-item-has-children a {
+    text-align: right;
+    padding-right: 0;
+    padding-left: 15px;
+}
+
+.rtl .header .primary-header-inner .header-menu-wrap ul .menu-item-has-children:after{
+    right: auto;
+    left: 0;
+}
+
+.rtl .header .primary-header-inner .header-menu-wrap ul .menu-item-has-children ul li a{
+    padding-right: 20px;
+}
+
+.rtl .header .primary-header-inner .header-menu-wrap ul li.mega-menu:after{
+    transform: translateY(36px) translateX(10px);
+}
+
+.rtl{
+    .header .primary-header-inner .header-menu-wrap ul li:first-child{
+        margin: 0 25px;
+    }
+    
+    .header .primary-header-inner .header-menu-wrap ul li:last-child{
+        margin: 0 25px;
+        margin-left: 0;
+    }
+
+    .header .primary-header-inner .header-menu-wrap ul li ul li:first-child{
+        margin: 0;
+    }
+
+    .header .primary-header-inner .header-menu-wrap ul li ul li:last-child{
+        margin: 0;
+    }
+}
+
+.rtl .header-2 .primary-header-inner .header-menu-wrap ul li.mega-menu:after{
+    transform: translateY(45px) translateX(10px);
+}
+
+
+.rtl .rr-primary-btn i {
+    margin-right: 10px;
+    font-size: 14px;
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.rtl .faq-content .accordion .accordion-item .accordion-button:after{
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.rtl .project-accordion .accordion-item .accordion-body .hover-content .content-right .project-thumb{
+    right: auto;
+    left: 0;
+}
+
+.rtl .project-item .project-content .project-right{
+    text-align: right;
+}
+
+.rtl .footer-widget .widget-header .widget-title:before{
+    display: none;
+}
+
+.rtl .footer-widget .footer-form .submit{
+    right: auto;
+    left: 0;
+}
+
+.rtl .footer-widget .footer-form .form-control{
+    padding: 15px 15px 15px 104px;
+}
+
+.rtl .footer-widget.footer-col-2{
+    padding-left: 0;
+    padding-right: 70px;
+    @include breakpoint(md){
+        padding-right: 0;
+    }
+}
+
+.rtl{
+    .about-content-2{
+        padding-left: 0;
+        padding-right: 50px;
+        @include breakpoint(md){
+            padding-right: 0;
+        }
+    }
+
+    .newsletter-form{
+        .form-control{
+            padding: 24.5px 70px 24.5px 290px;
+        }
+    }
+
+    .newsletter-form .icon{
+        left: auto;
+        right: 35px;
+    }
+
+    .brand-wrap .brand-img-wrap{
+        display: none;
+    }
+
+    .newsletter-form .submit-btn{
+        right: auto;
+        left: 20px;
+    }
+}
+
+/* !END: RTL CSS */

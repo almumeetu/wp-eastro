@@ -1,0 +1,613 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Cta CSS
+----------------------------------------*/
+.cta-wrap{
+    .section-heading{
+        .section-title{
+            font-size: 60px;
+            @include breakpoint(lg){
+                max-width: 100%;
+            }
+            @include breakpoint(md){
+                font-size: 32px;
+            }
+        }
+    }
+    .cta-thumb-wrap{
+        @include flex-center;
+        img{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            filter: grayscale(1);
+        }
+        .cta-btn{
+            background-color: var(--rr-color-theme-primary);
+            color: var(--rr-color-common-white);
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            @include flex-center;
+            border: 10px solid #02050A;
+            font-size: 30px;
+            margin-left: -50px;
+            position: relative;
+            z-index: 2;
+            @include transition(all 0.3s ease-in-out);
+            i{
+                transform: rotate(-45deg);
+                @include transition(all 0.3s ease-in-out);
+            }
+            &:hover{
+                i{
+                    transform: rotate(0);
+                }
+            }
+        }
+    }
+}
+
+
+// Service Cta
+
+.service-cta{
+    position: relative;
+    z-index: 1;
+    .bg-img{
+        @include background;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        filter: saturate(0);
+    }
+    .overlay{
+        background-color: var(--rr-color-theme-primary);
+        mix-blend-mode: multiply;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.service-cta-wrap{
+    position: relative;
+    z-index: 1;
+    @include flex-vertical-center;
+    justify-content: space-between;
+    padding: 100px 0;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    @include breakpoint(md){
+        padding: 60px 0;
+    }
+    .section-heading{
+        .sub-heading{
+            color: var(--rr-color-common-white);
+            &:before{
+                background: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+            }
+        }
+    }
+    .cta-btn{
+        background-color: transparent;
+        border: 1px solid var(--rr-color-common-white);
+        &:before{
+            background-color: var(--rr-color-theme-primary);
+        }
+        &:hover{
+            border: 1px solid var(--rr-color-theme-primary);
+        }
+    }
+}
+
+// Cta 5
+
+.cta-section-5{
+    position: relative;
+    z-index: 1;
+    .bg-img{
+        @include background;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .overlay{
+        background: #3F5AF3;
+        mix-blend-mode: multiply;
+        transform: rotate(180deg);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .overlay-2{
+        background: linear-gradient(266.79deg, #1C1C1C 51.86%, rgba(28, 28, 28, 0.32) 78.29%);
+        mix-blend-mode: difference;
+        opacity: 0.47;
+        transform: rotate(180deg);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .overlay-3{
+        background: linear-gradient(266.79deg, #1C1C1C 51.86%, rgba(28, 28, 28, 0.32) 78.29%);
+        mix-blend-mode: multiply;
+        opacity: 0.15;
+        transform: rotate(180deg);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+.cta-wrap-5{
+    @include flex-vertical-center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 40px;
+    .section-heading{
+        .sub-heading{
+            color: var(--rr-color-common-white);
+            &:before{
+                background: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+            }
+        }
+    }
+    .cta-btn{
+        .rr-primary-btn{
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid #FFFFFF;
+            backdrop-filter: blur(8.5px);
+            border-radius: 100px;
+            padding: 18px 30px;
+        }
+    }
+}
+
+// Cta 7
+
+.cta-section-7{
+    position: relative;
+    z-index: 1;
+    .bg-img{
+        @include background;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        filter: saturate(0);
+    }
+    .bg-item{
+        .overlay{
+            background: #BCC6FF;
+            mix-blend-mode: multiply;
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .round-shape{
+            background: #3F5AF3;
+            mix-blend-mode: multiply;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 940px;
+            height: 870px;
+            border-radius: 50%;
+        }
+        .round-shape-2{
+            background: rgba(4, 12, 56, 0.2);
+            mix-blend-mode: multiply;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 966px;
+            height: 1070px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.cta-content-wrap{
+    padding: 50px 0;
+    .title{
+        font-size: 80px;
+        font-weight: 800;
+        margin-bottom: 40px;
+        @include breakpoint(md){
+            font-size: 60px;
+        }
+        @include breakpoint(sm){
+            font-size: 36px;
+        }
+    }
+    .cta-btn{
+        .rr-primary-btn{
+            background-color: var(--rr-color-common-white);
+            color: var(--rr-color-theme-primary);
+            &:before{
+                background-color: var(--rr-color-theme-primary);
+            }
+            &:hover{
+                color: var(--rr-color-common-white);
+            }
+        }
+    }
+}
+
+// Cta 8
+
+.cta-8{
+    .bg-img{
+        filter: saturate(0);
+    }
+    .overlay{
+        background: rgba(7, 10, 22, 0.86);
+        mix-blend-mode: normal;
+        transform: rotate(180deg);
+    }
+    .overlay-2{
+        background: linear-gradient(266.79deg, #1C1C1C 51.86%, rgba(28, 28, 28, 0.32) 78.29%);
+        mix-blend-mode: difference;
+        opacity: 0.47;
+        transform: rotate(180deg);
+    }
+    .overlay-3{
+        background: linear-gradient(266.79deg, #1C1C1C 51.86%, rgba(28, 28, 28, 0.32) 78.29%);
+        mix-blend-mode: multiply;
+        opacity: 0.15;
+        transform: rotate(180deg);
+    }
+}
+
+.cta-wrap-8{
+    .cta-btn{
+        .rr-primary-btn{
+            border-radius: 0;
+        }
+    }
+}
+
+// Cta Contact
+
+.cta-contact-area{
+    background-color: var(--rr-color-bg-1);
+    position: relative;
+    z-index: 1;
+    &:before{
+        background-color: #02050A;
+        content: "";
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+.cta-contact-wrap{
+    background-color: var(--rr-color-theme-primary);
+    padding: 100px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    @include breakpoint(lg){
+        padding: 100px 50px;
+    }
+    @include breakpoint(sm){
+        padding: 50px 20px;
+    }
+    .cta-contact-img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        max-width: 550px;
+        height: 100%;
+        width: 100%;
+        @include breakpoint(lg){
+            right: -22%;
+        }
+        @include breakpoint(lg){
+            display: none;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .section-heading{
+        .sub-heading{
+            color: var(--rr-color-common-white);
+            &:before{
+                background: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+            }
+        }
+        .section-title{
+            font-size: 40px;
+            @include breakpoint(sm){
+                font-size: 32px;
+            }
+        }
+    }
+    .cta-contact-btn-wrap{
+        @include flex-vertical-center;
+        column-gap: 30px;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        .cta-contact-btn{
+            .rr-primary-btn{
+                background-color: var(--rr-color-common-white);
+                color: var(--rr-color-theme-primary);
+                &:before{
+                    background-color: var(--rr-color-bg-1);
+                }
+                &:hover{
+                    color: var(--rr-color-common-white);
+                }
+            }
+        }
+        .cta-contact-info{
+            display: grid;
+            align-items: center;
+            grid-template-columns: 55px 1fr;
+            grid-gap: 20px;
+            .icon{
+                background-color: var(--rr-color-common-white);
+                height: 55px;
+                width: 55px;
+                @include flex-center;
+                color: var(--rr-color-theme-primary);
+                border-radius: 50%;
+            }
+            .content{
+                span{
+                    color: var(--rr-color-common-white);
+                    display: block;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+                a{
+                    color: var(--rr-color-common-white);
+                    font-weight: 700;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+.cta-contact-wrap-2{
+    overflow: hidden;
+    .cta-contact-img-2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        @include breakpoint(lg){
+            max-width: 600px;
+        }
+        @include breakpoint(md){
+            display: none;
+        }
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+//cta-section-13
+.cta-section-13{
+    .section-heading{
+        .sub-heading{
+            margin-bottom: 0;
+            margin-bottom: 10px;
+        }
+        .section-title{
+            font-size: 40px;
+        }
+    }
+}
+
+//cta-section-14
+.cta-section-14{
+    
+    .cta-wrap-5{
+        display: block;
+        .section-heading{
+            .sub-heading{
+                margin-bottom: 8px;
+                padding: 0;
+                &::before{
+                    display: none;
+                }
+            }
+            .section-title{
+                @include breakpoint(sm) {
+                    font-size: 26px;
+                }
+                
+            }
+        }
+        .cta-btn{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            row-gap: 10px;
+            margin-top: 33px;
+            .cta-btn-14{
+                background-color: var(--rr-color-common-white);
+                padding: 5px 10px 5px 10px;
+                border-radius: 5px;
+                color: var(--rr-color-heading-primary);
+                font-weight: 500;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    color: var(--rr-color-theme-primary);
+                }
+                i{
+                    color: var(--rr-color-theme-primary);
+                    margin-right: 7px;
+                }
+            }
+        }
+    }
+}
+
+// cta-section-bg-15
+.cta-section-bg-15 {
+    position: relative;
+    overflow: hidden;
+    padding-top: 115px;
+
+    @include breakpoint(md) {
+        padding-top: 80px;
+    }
+
+    @include breakpoint(sm) {
+        padding-top: 70px;
+    }
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: linear-gradient(180deg, rgba(17, 21, 28, 0.88) 0%, var(--rr-color-bg-1) 100%);
+    }
+
+    .cta-wrap-15 {
+        padding-bottom: 115px;
+
+        @include breakpoint(md) {
+            padding-bottom: 80px;
+        }
+
+        @include breakpoint(sm) {
+            padding-bottom: 50px;
+        }
+    }
+
+    .cta-btn-wrap-15 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        .rr-primary-btn {
+            padding: 17px 32.2px;
+        }
+
+        .cta-call {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            position: relative;
+
+            .cta-call-icon {
+                span {
+                    width: 50px;
+                    height: 50px;
+                    font-size: 14px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 500px;
+                    color: var(--rr-color-theme-primary);
+                    border: 1px solid var(--rr-color-theme-primary);
+                }
+            }
+
+            .cta-call-info {
+                span {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 1;
+                    display: block;
+                    margin-top: 3px;
+                    color: var(--rr-color-text-body);
+                }
+
+                .contact{
+                    display: flex;
+                    align-items: end;
+                    margin-bottom: 8px;
+                    span{
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 1;
+                        letter-spacing: -0.02em;
+                        color: var(--rr-color-theme-primary);
+                    }
+                    a {
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 1;
+                        letter-spacing: -0.02em;
+                        color: var(--rr-color-theme-primary);
+                        &:hover {
+                            color: var(--rr-color-common-white);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .brand-wrap-15 {
+        padding: 52.5px 0;
+        position: relative;
+        border-top: 1px solid var(--rr-color-grey-2);
+
+        @include breakpoint(md) {
+            padding: 30px 0;
+        }
+        @include breakpoint(sm) {
+            padding: 19px 0;
+        }
+
+        .swiper-wrapper {
+            display: flex;
+            align-items: center;
+            transition-timing-function: linear;
+
+            .swiper-slide {
+                width: auto;
+            }
+        }
+    }
+}
+/* !END: Cta CSS */
