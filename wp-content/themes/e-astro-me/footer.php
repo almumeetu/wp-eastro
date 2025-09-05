@@ -2,33 +2,63 @@
 /**
  * The template for displaying the footer
  *
- * Contains the closing of the #content div and all content after.
+ * Contains the closing of the #smooth-content and #smooth-wrapper divs and all content after.
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package e-astro-me
  */
-
 ?>
+            <footer class="footer-section footer-2 bg-dark-1">
+                <div class="shape"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/shapes/footer-shape.png" alt="<?php esc_attr_e( 'Footer Shape', 'e-astro-me' ); ?>"></div>
+                <div class="container">
+                    <div class="footer-top">
+                        <div class="footer-logo">
+                            <?php
+                            if ( has_custom_logo() ) {
+                                the_custom_logo();
+                            } else {
+                                ?>
+                                <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/logo/logo-2.png" alt="<?php bloginfo( 'name' ); ?>"></a>
+                                <?php
+                            }
+                            ?>
+                        </div>
+                        <p><?php esc_html_e( 'KOREA OFFICE - 285, Mokdongseo-Ro, YangCheon-Gu, Seoul, KOREA (08011)', 'e-astro-me' ); ?><br>
+                            <?php esc_html_e( 'TEL 82-2-2645-5640 E-mail ', 'e-astro-me' ); ?><a href="mailto:eastro@eastronew.com"><?php esc_html_e( 'eastro@eastronew.com', 'e-astro-me' ); ?></a></p>
+                    </div>
+                </div>
+                <div class="copyright-area">
+                    <div class="container">
+                        <div class="row copyright-content justify-content-center">
+                            <div class="col-lg-6 col-md-12">
+                                <p class="mb-0"><?php printf( esc_html__( 'COPYRIGHT © %s EASTRO CO, LTD. All RIGHTS RESERVED.', 'e-astro-me' ), date( 'Y' ) ); ?></p>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <ul class="copyright-list">
+                                    <li><a href="<?php echo esc_url( get_permalink( get_page_by_path( 'contact' ) ) ); ?>"><?php esc_html_e( 'Security', 'e-astro-me' ); ?></a></li>
+                                    <li><a href="<?php echo esc_url( get_permalink( get_page_by_path( 'contact' ) ) ); ?>"><?php esc_html_e( 'Privacy & Cookie Policy', 'e-astro-me' ); ?></a></li>
+                                    <li><a href="<?php echo esc_url( get_permalink( get_page_by_path( 'contact' ) ) ); ?>"><?php esc_html_e( 'Terms of Services', 'e-astro-me' ); ?></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- ./ footer-section -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'e-astro-me' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'e-astro-me' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'e-astro-me' ), 'e-astro-me', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+        </div><!-- #smooth-content -->
+    </div><!-- #smooth-wrapper -->
+
+    <div id="scroll-percentage"><span id="scroll-percentage-value"></span></div>
+    <!-- ./ scrollup -->
+
+    <div id="theme-toogle" class="switcher-button">
+        <div class="switcher-button-inner-left"></div>
+        <div class="switcher-button-inner"></div>
+    </div>
+    <!-- ./ theme-toogle -->
 
 <?php wp_footer(); ?>
-
 </body>
 </html>
