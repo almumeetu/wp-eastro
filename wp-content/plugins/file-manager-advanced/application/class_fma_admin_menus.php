@@ -16,6 +16,8 @@ class class_fma_admin_menus {
 			$this->langs = new class_fma_adv_lang();
 
             add_action( 'fma__settings_tab_notifications_content', array( $this, 'notification_callback' ) );
+            // Free: Show AI Integration (Code Pilot) tab content as a PRO teaser
+            add_action( 'fma__settings_tab_ai_content', array( $this, 'ai_integration_callback' ) );
 	  }
 
     /**
@@ -59,6 +61,120 @@ A file was {event} by {username} on {date_time}. The file name is {file_name} wi
           }
 
       }
+      
+      /**
+     * AI Integration (Code Pilot) Callback
+     * Mirrors notification_callback pattern for the free version
+     * @since 5.4.1
+     */
+      public function ai_integration_callback() {
+          if ( ! class_exists( 'AFMP\\Modules\\AFMP_AI_Integration' ) ) {
+              // Defaults to avoid undefined variable notices in free view
+              $enabled = '0';
+              $api_key = '';
+                            ?>
+                            <style type="text/css">
+                                .ai__heading {
+                                        color: #000;
+                                        font-size: 18px;
+                                        font-weight: 600;
+                                        line-height: normal;
+                                }
+                                .ai__heading-pro-tag {
+                                        display: inline-block;
+                                        padding: 2px 8px;
+                                        background: linear-gradient(270deg, #011D33 0%, #3F6972 100%);
+                                        border-radius: 4px;
+                                        color: #fff;
+                                        font-size: 12px;
+                                        margin-left: 25px;
+                                }
+                                .ai__wrap {
+                                        opacity: 0.5;
+                                        position: relative;
+                                }
+                                .ai__wrap::before {
+                                        content: "";
+                                        display: block;
+                                        width: 100%;
+                                        height: 100%;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        z-index: 1;
+                                        background: transparent;
+                                }
+                            </style>
+                            <h2 class="ai__heading">AI Integration (Code Pilot) <span class="ai__heading-pro-tag">PRO</span></h2>
+                            <div class="ai__wrap fma__wrap" afmp-href="https://advancedfilemanager.com/pricing/?utm_source=plugin&utm_medium=ai_integration&utm_campaign=plugin">
+                            <div class="afmp-ai-settings">
+                                <form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
+                    <?php wp_nonce_field( 'afmp_save_ai_settings', 'afmp_ai_nonce' ); ?>
+                    <input type="hidden" name="action" value="afmp_save_ai_settings" />
+                    <table class="form-table">
+                        <tr>
+                            <th scope="row">
+                                <label for="afmp_ai_enabled"><?php _e( 'Enable AI Integration', 'afm-pro' ); ?></label>
+                            </th>
+                            <td>
+                                <input type="checkbox" name="afmp_ai_enabled" id="afmp_ai_enabled" value="1" <?php checked( $enabled, '1' ); ?> />
+                                <p class="description"><?php _e( 'Enable Code Pilot AI assistant in the code editor.', 'afm-pro' ); ?></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="afmp_gpt_api_key"><?php _e( 'GPT API Key', 'afm-pro' ); ?></label>
+                            </th>
+                            <td>
+                                <input type="password" name="afmp_gpt_api_key" id="afmp_gpt_api_key" value="<?php echo esc_attr( $api_key ); ?>" class="regular-text" autocomplete="off" />
+                                <p class="description"><?php _e( 'Enter your OpenAI GPT API key. This key is stored only for your user account.', 'afm-pro' ); ?></p>
+                            </td>
+                        </tr>
+                    </table>
+                    <?php submit_button( __( 'Save Changes', 'afm-pro' ) ); ?>
+                </form>
+                
+                <div style="margin-top: 30px; padding: 20px; background: #f9f9f9; border-left: 4px solid #0073aa; border-radius: 4px;">
+                    <h3 style="margin-top: 0; color: #0073aa;">How to Use Code Pilot</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div>
+                            <h4 style="color: #333; margin-bottom: 10px;">🤖 Chat Assistant</h4>
+                            <ol style="margin: 0; padding-left: 20px;">
+                                <li>Open any file in the File Manager editor</li>
+                                <li>Click the <strong>Code Pilot</strong> button (bottom right)</li>
+                                <li>Type your questions or requests in the chat</li>
+                                <li>AI will respond with code suggestions</li>
+                                <li>Click <strong>Apply</strong> to insert code into your file</li>
+                            </ol>
+                        </div>
+                        <div>
+                            <h4 style="color: #333; margin-bottom: 10px;">⚡ Inline Suggestions</h4>
+                            <ol style="margin: 0; padding-left: 20px;">
+                                <li>Start typing code in the editor</li>
+                                <li>AI will show ghost text suggestions</li>
+                                <li>Press <strong>Tab</strong> to accept suggestions</li>
+                                <li>Press <strong>Esc</strong> to dismiss suggestions</li>
+                                <li>AI learns from your codebase for better suggestions</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 20px; padding: 15px; background: #fff; border-radius: 4px; border: 1px solid #ddd;">
+                        <h4 style="margin-top: 0; color: #333;">💡 Example Requests</h4>
+                        <ul style="margin: 0; padding-left: 20px;">
+                            <li>"Add proper comments to this code"</li>
+                            <li>"Fix the syntax error in this function"</li>
+                            <li>"Optimize this database query"</li>
+                            <li>"Add error handling to this code"</li>
+                            <li>"Convert this to use WordPress hooks"</li>
+                        </ul>
+                    </div>
+                </div>
+                            </div>
+              </div>
+              <?php
+          }
+      }
 
 	/**
 	 * Loading Menus
@@ -80,10 +196,23 @@ A file was {event} by {username} on {date_time}. The file name is {file_name} wi
             $fmaPer,
             'file_manager_advanced_ui',
             array($this, 'file_manager_advanced_ui'),
-            plugins_url( 'assets/icon/fma.png', __FILE__ ),
+            plugins_url( 'assets/icon/fma-new.png', __FILE__ ),
             4
         );
         add_submenu_page( 'file_manager_advanced_ui', 'Settings', 'Settings', $subPer, 'file_manager_advanced_controls', array(&$this, 'file_manager_advanced_controls'));
+		
+        if ( ! class_exists( 'AFMP\Modules\AFMP_AI_Integration' ) ) {
+            add_submenu_page(
+                'file_manager_advanced_ui',
+                'AI - Code Pilot',
+                'AI - Code Pilot <span class="update-plugins count-1" style="background: #d63638; color: #fff; font-size: 10px; padding: 2px 6px; border-radius: 10px; margin-left: 5px;">NEW</span>',
+                'manage_options',
+                'ai-code-pilot',
+                array( $this, 'ai_code_pilot_callback' ),
+                2
+            );
+        }
+
         if(!class_exists('file_manager_advanced_shortcode')) {
 		    add_submenu_page( 'file_manager_advanced_ui', 'Shortcodes', 'Shortcodes', $subPer, 'file_manager_advanced_shortcodes', array(&$this, 'file_manager_advanced_shortcodes'));
 	    }
@@ -97,7 +226,7 @@ A file was {event} by {username} on {date_time}. The file name is {file_name} wi
         }
 
         if ( ! class_exists( 'AFMP\\Modules\\FileLogs' ) ) {
-            add_submenu_page( 'file_manager_advanced_ui', 'File Logs', 'File Logs', 'manage_options', 'afmp-file-logs', array( $this, 'afmp__file_logs' ), 2 );
+            add_submenu_page( 'file_manager_advanced_ui', 'File Logs', 'File Logs', 'manage_options', 'afmp-file-logs', array( $this, 'afmp__file_logs' ), 3 );
         }
         
         if ( ! class_exists( 'AFMP\\Modules\\GoogleDrive' ) ) {
@@ -112,6 +241,20 @@ A file was {event} by {username} on {date_time}. The file name is {file_name} wi
             add_submenu_page( 'file_manager_advanced_ui', 'Amazon S3 (AWS) Settings', 'Amazon S3 (AWS)', 'manage_options', 'afmp-aws', array( $this, 'aws_menu'  ) );
         }
 	}
+
+    /**
+     * AI Code Pilot callback - redirect to settings
+     */
+    public function ai_code_pilot_callback() {
+        $target_url = admin_url( 'admin.php?page=file_manager_advanced_controls&tab=ai' );
+        ?>
+        <script>
+            window.location.href = '<?php echo $target_url; ?>';
+        </script>
+        <p>Redirecting to AI Integration Settings... <a href="<?php echo $target_url; ?>">Click here</a></p>
+        <?php
+        exit;
+    }
 
 	/**
 	 * Dropbox menu
@@ -850,3 +993,4 @@ HTML;
         return $wp_roles->roles; 
 	}
 }
+

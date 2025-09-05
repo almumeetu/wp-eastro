@@ -25,9 +25,9 @@ get_header();
                     </span>
                 </div>
                 <div class="shapes">
-                    <div class="shape shape-1"><img src="<?php echo get_template_directory_uri(); ?>assets/img/shapes/hero-shape-3.png" alt="shape">
+                    <div class="shape shape-1"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/shapes/hero-shape-3.png" alt="shape">
                     </div>
-                    <div class="shape shape-2"><img src="<?php echo get_template_directory_uri(); ?>assets/img/shapes/hero-shape-2.png" alt="shape">
+                    <div class="shape shape-2"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/shapes/hero-shape-2.png" alt="shape">
                     </div>
                 </div>
                 <div class="hero-sidebar">
@@ -56,7 +56,7 @@ get_header();
                 <div class="row align-items-center g-4">
                     <div class="col-lg-7 col-xl-6">
                         <div class="hero-img hero-2">
-                            <img src="assets/img/images/hero-img-4.png" alt="hero">
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/images/hero-img-4.png" alt="hero">
                         </div>
                     </div>
                     <div class="col-lg-5 col-xl-6">
@@ -80,14 +80,14 @@ get_header();
                         <div class="col-lg-5 col-md-12">
                             <div class="about-img-box">
                                 <div class="shapes">
-                                    <img class="shape shape-1" src="<?php echo get_template_directory_uri(); ?>assets/img/shapes/about-shape-1.png" alt="about">
-                                    <img class="shape shape-2" src="<?php echo get_template_directory_uri(); ?>assets/img/shapes/about-shape-2.png" alt="about">
+                                    <img class="shape shape-1" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/shapes/about-shape-1.png" alt="about">
+                                    <img class="shape shape-2" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/shapes/about-shape-2.png" alt="about">
                                 </div>
                                 <div class="img-1 reveal">
-                                    <img src="<?php echo get_template_directory_uri(); ?>assets/img/images/about-img-2.jpg" alt="about">
+                                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/images/about-img-2.jpg" alt="about">
                                 </div>
                                 <div class="img-2 reveal">
-                                    <img src="<?php echo get_template_directory_uri(); ?>assets/img/images/about-img-3.jpg" alt="about">
+                                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/images/about-img-3.jpg" alt="about">
                                 </div>
                             </div>
                         </div>
@@ -273,7 +273,7 @@ get_header();
                             <div class="team-item fade-top">
                                 <div class="team-thumb">
                                     <div class="gradient-color"></div>
-                                    <img src="assets/img/team-2/chairman.jpeg" alt="team">
+                                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/team-2/chairman.jpeg" alt="team">
                                     <ul class="team-social-2">
                                         <li class="facebook">
                                             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -299,7 +299,7 @@ get_header();
                             <div class="team-item fade-top">
                                 <div class="team-thumb">
                                     <div class="gradient-color"></div>
-                                    <img src="assets/img/team-2/Md.jpeg" alt="team">
+                                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/team-2/Md.jpeg" alt="team">
                                     <ul class="team-social-2">
                                         <li class="facebook">
                                             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -325,7 +325,7 @@ get_header();
                             <div class="team-item fade-top">
                                 <div class="team-thumb">
                                     <div class="gradient-color"></div>
-                                    <img src="assets/img/team-2/Director-1.jpeg" alt="team">
+                                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/team-2/Director-1.jpeg" alt="team">
                                     <ul class="team-social-2">
                                         <li class="facebook">
                                             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -351,7 +351,7 @@ get_header();
                             <div class="team-item fade-top">
                                 <div class="team-thumb">
                                     <div class="gradient-color"></div>
-                                    <img src="assets/img/team-2/director-2.jpeg" alt="team">
+                                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/team-2/director-2.jpeg" alt="team">
                                     <ul class="team-social-2">
                                         <li class="facebook">
                                             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -374,11 +374,7 @@ get_header();
                             </div>
                         </div>
                     </div>
-
                 </div>
-
-
-
             </div>
 
 
@@ -392,10 +388,10 @@ get_header();
 
                     <div class="row">
                         <div class="col-xl-12 pb-3">
-                            <img src="<?php echo get_template_directory_uri(); ?>assets/img/awrds/company-aciement.png" alt="awerd img">
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/awrds/company-aciement.png" alt="awerd img">
                         </div>
                         <div class="col-xl-12 pb-3">
-                            <img src="<?php echo get_template_directory_uri(); ?>assets/img/awrds/company-achevemnt-2.png" alt="awerd img">
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/awrds/company-achevemnt-2.png" alt="awerd img">
                         </div>
                     </div>
             </section>
@@ -411,7 +407,7 @@ get_header();
 
                     <div class="row">
                         <div class="col-xl-12 pb-3">
-                            <img src="<?php echo get_template_directory_uri(); ?>assets/img/images/puchaing-patern.png" alt="awerd img">
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/images/puchaing-patern.png" alt="awerd img">
                         </div>
                     </div>
             </section>
@@ -426,7 +422,7 @@ get_header();
 
                     <div class="row">
                         <div class="col-xl-12 pb-3">
-                            <img src="<?php echo get_template_directory_uri(); ?>assets/img/team-2/Screenshot from 2025-08-04 07-15-22.png" alt="awerd img">
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/team-2/Screenshot from 2025-08-04 07-15-22.png" alt="awerd img">
                         </div>
                     </div>
             </section>
@@ -442,7 +438,7 @@ get_header();
                     </div>
                     <div class="reward-items">
                         <div class="reward-item fade-top">
-                            <div class="bg-img" data-background="assets/img/bg-img/reward-bg.png"></div>
+                            <div class="bg-img" data-background="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/bg-img/reward-bg.png"></div>
                             <div class="reward-left">
                                 <h4 class="date">Export amount (ratio) </h4>
                             </div>
@@ -457,7 +453,7 @@ get_header();
                             </div>
                         </div>
                         <div class="reward-item fade-top">
-                            <div class="bg-img" data-background="<?php echo get_template_directory_uri(); ?>assets/img/bg-img/reward-bg.png"></div>
+                            <div class="bg-img" data-background="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/bg-img/reward-bg.png"></div>
                             <div class="reward-left">
                                 <h4 class="date">Total assets </h4>
                             </div>
@@ -473,7 +469,7 @@ get_header();
                             </div>
                         </div>
                         <div class="reward-item fade-top">
-                            <div class="bg-img" data-background="<?php echo get_template_directory_uri(); ?>assets/img/bg-img/reward-bg.png"></div>
+                            <div class="bg-img" data-background="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/bg-img/reward-bg.png"></div>
                             <div class="reward-left">
                                 <h4 class="date"> Capital</h4>
                             </div>
@@ -528,7 +524,7 @@ get_header();
 
 
             <section class="about-section-3">
-                <div class="about-wrap-3" data-background="<?php echo get_template_directory_uri(); ?>assets/img/bg-img/about-bg.png">
+                <div class="about-wrap-3" data-background="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/bg-img/about-bg.png">
                     <div class="about-text">
                     </div>
                     <div class="container">
@@ -536,10 +532,10 @@ get_header();
                             <div class="col-lg-5 col-md-12">
                                 <div class="about-img-items">
                                     <div class="about-img reveal">
-                                        <img class="about-img img-1" src="<?php echo get_template_directory_uri(); ?>assets/img/images/about-img-4.png" alt="img">
+                                        <img class="about-img img-1" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/images/about-img-4.png" alt="img">
                                     </div>
                                     <div class="about-thumb-2 reveal">
-                                        <img class="about-img img-2" src="<?php echo get_template_directory_uri(); ?>assets/img/images/about-img-5.png" alt="img">
+                                        <img class="about-img img-2" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/images/about-img-5.png" alt="img">
                                     </div>
                                 </div>
                             </div>
@@ -587,7 +583,7 @@ get_header();
                         <div class="section-block">
                             <h5 class="section-title text-justify">Petrochemical</h5>
                             <p>Petroleum Item and petrochemicals: Lubricating oil Bitumen</p>
-                            <img src="assets/img/agriculture/1.png" alt="Petroleum" class="section-img">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/agriculture/1.png" alt="Petroleum" class="section-img">
                         </div>
                     </div>
 
@@ -597,7 +593,7 @@ get_header();
                             <h5 class="section-title text-justify">
                                 Agricultural Products</h5>
                             <p>Agriculture Item: Grain crop / Wheat / Cooking oil / Animal food.</p>
-                            <img src="assets/img/agriculture/2.png" alt="Agriculture" class="section-img">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/agriculture/2.png" alt="Agriculture" class="section-img">
                         </div>
                     </div>
 
@@ -617,7 +613,7 @@ get_header();
                                 <!-- E-ASTRO CO.,LTD -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="card office-card shadow-sm h-100">
-                                        <img src="assets/img/office/1.png" class="card-img-top" alt="E-ASTRO Office">
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/office/1.png" class="card-img-top" alt="E-ASTRO Office">
                                         <div class="card-body">
                                             <h5 class="card-title">E-ASTRO CO.,LTD.</h5>
                                             <p class="card-text">서울시 양천구 목동서로 285</p>
@@ -628,7 +624,7 @@ get_header();
                                 <!-- HK-Dubai Office -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="card office-card shadow-sm h-100">
-                                        <img src="assets/img/office/2.png" class="card-img-top" alt="HK-Dubai Office">
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/office/2.png" class="card-img-top" alt="HK-Dubai Office">
                                         <div class="card-body">
                                             <h5 class="card-title">HK-Dubai Office</h5>
                                             <p class="card-text">
@@ -642,7 +638,7 @@ get_header();
                                 <!-- Ukraine Office -->
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="card office-card shadow-sm h-100">
-                                        <img src="assets/img/office/3.png" class="card-img-top" alt="Ukraine Office">
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/office/3.png" class="card-img-top" alt="Ukraine Office">
                                         <div class="card-body">
                                             <h5 class="card-title">Ukraine Office</h5>
                                             <p class="card-text">Blvd Druthby narodiv 14-16, Kyiv, Ukraine
@@ -683,30 +679,31 @@ get_header();
 
                     <!-- Row 1 -->
                     <div class="col-6 col-md-4 col-lg-3">
-                        <img src="<?php echo get_template_directory_uri(); ?>assets/img/mechine-catalog/1.png" alt="Machine 1">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/mechine-catalog/1.png" alt="Machine 1">
                     </div>
                     <div class="col-6 col-md-4 col-lg-3">
-                        <img src="<?php echo get_template_directory_uri(); ?>assets/img/mechine-catalog/2.png" alt="Machine 2">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/mechine-catalog/2.png" alt="Machine 2">
                     </div>
                     <div class="col-12 col-md-4 col-lg-3">
-                        <img src="<?php echo get_template_directory_uri(); ?>assets/img/mechine-catalog/3.png" alt="Machine 3">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/mechine-catalog/3.png" alt="Machine 3">
                     </div>
 
                     <!-- Row 2 -->
                     <div class="col-6 col-md-4 col-lg-3">
-                        <img src="<?php echo get_template_directory_uri(); ?>assets/img/mechine-catalog/4.png" alt="Knit Shoe">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/mechine-catalog/4.png" alt="Knit Shoe">
                     </div>
                     <div class="col-6 col-md-4 col-lg-3">
-                        <img src="<?php echo get_template_directory_uri(); ?>assets/img/mechine-catalog/5.png" alt="Factory Line">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/mechine-catalog/5.png" alt="Factory Line">
                     </div>
 
                     <!-- Row 3 -->
                     <div class="col-6 col-md-4 col-lg-3">
-                        <img src="<?php echo get_template_directory_uri(); ?>assets/img/mechine-catalog/6.png" alt="Fabric Stack">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/mechine-catalog/6.png" alt="Fabric Stack">
                     </div>
                     <div class="col-6 col-md-4 col-lg-3">
-                        <img src="<?php echo get_template_directory_uri(); ?>assets/img/mechine-catalog/7.png" alt="Yarn and Fabric">
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/mechine-catalog/7.png" alt="Yarn and Fabric">
                     </div>
+
                 </div>
 
                 <!-- Button -->

@@ -44,8 +44,8 @@
             <div class="primary-header-inner">
                 <div class="header-logo d-lg-block">
                     <a href="index.html">
-                        <img class="logo-dark" src="assets/img/logo/logo-2.png" alt="Logo">
-                        <img class="logo-light" src="assets/img/logo/logo-3.png" alt="Logo">
+                        <img class="logo-dark" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/logo/logo-2.png" alt="Logo">
+                        <img class="logo-light" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/logo/logo-3.png" alt="Logo">
                     </a>
                 </div>
                 <div class="header-right-wrap">
@@ -92,8 +92,8 @@
         <div class="side-menu-content">
             <div class="side-menu-head">
                 <div class="side-menu-logo">
-                    <a class="dark-img" href="index.html"><img src="assets/img/logo/logo-2.png" alt="logo"></a>
-                    <a class="light-img" href="index.html"><img src="assets/img/logo/logo-3.png" alt="logo"></a>
+                    <a class="dark-img" href="index.html"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/logo/logo-2.png" alt="logo"></a>
+                    <a class="light-img" href="index.html"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/logo/logo-3.png" alt="logo"></a>
                 </div>
                 <button class="mobile-side-menu-close"><i class="fa-regular fa-xmark"></i></button>
             </div>
@@ -118,8 +118,8 @@
         </button>
         <div class="side-menu-content">
             <div class="side-menu-logo">
-                <a class="dark-img" href="index.html"><img src="assets/img/logo/logo-2.png" alt="logo"></a>
-                <a class="light-img" href="index.html"><img src="assets/img/logo/logo-3.png" alt="logo"></a>
+                <a class="dark-img" href="index.html"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/logo/logo-2.png" alt="logo"></a>
+                <a class="light-img" href="index.html"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/logo/logo-3.png" alt="logo"></a>
             </div>
             <div class="side-menu-about">
                 <div class="side-menu-header">

@@ -4,7 +4,7 @@ Tags: file-manager, wp-file-manager, document management, ftp, advance-file-mana
 Requires at least: 4.0
 Tested up to: 6.8
 Requires PHP: 7.0
-Stable tag: 5.4.0
+Stable tag: 5.4.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -54,6 +54,8 @@ Whether you are a developer managing large files or a casual user needing basic 
 ✅ **Themes for File Manager:** Choose between light and elegant themes to create a visually appealing and comfortable file management user interface.
 
 ✅ **Keyboard Shortcuts:** Speed up your file management tasks by using a range of keyboard shortcuts for common operations.
+
+✅ **Debug in Code Editor:** Identify and fix issues directly in the editor to prevent fatal errors and ensure smooth site performance.
 
 ✅ **Media Previews:** Preview video and audio files directly from the interface, ensuring quick checks without downloading them.
 
@@ -115,6 +117,11 @@ The Shortcode Addon for Advanced File Manager unlocks even more possibilities by
 
 ✔️ **OneDrive:** Seamlessly connect your OneDrive account to WordPress and manage, upload, and organize files directly from the File Manager—no external tabs or tools required.
 
+✔️ **Amazon S3:** Seamlessly connect your Amazon S3 account to WordPress and manage, upload, and organize files directly from the File Manager—no external tabs or tools required.
+
+✔️ **AI Integration:** Effortlessly enhance your coding experience with the built-in AI Agent in the Code Editor—create, edit, and customize code instantly without leaving the File Manager.
+
+
 **Get ✨[Advanced File Manager Pro](https://advancedfilemanager.com/pricing/?utm_source=wp_org&utm_medium=afm_product_page)✨ Now!**
 
 
@@ -130,7 +137,6 @@ Ease of Use: No need for technical expertise or additional software—everything
 * **Enhanced Security:** With built-in role and user restrictions, you can better control who can access files.
 
 * **Convenient File Operations:** Perform all file operations with just a few clicks, eliminating the need for command-line instructions.
-
 
 
 ### **Why Should You Install Advanced File Manager Plugin?**
@@ -215,6 +221,8 @@ Soon, you will be able to integrate your favorite cloud storage app with WordPre
 * [Google Drive](https://advancedfilemanager.com/pricing/?utm_source=wp_org&utm_medium=readme&utm_campaign=google_drive)
 
 * [OneDrive](https://advancedfilemanager.com/pricing/?utm_source=wp_org&utm_medium=readme&utm_campaign=one_drive)
+
+* [Amazon S3](https://advancedfilemanager.com/pricing/?utm_source=wp_org&utm_medium=readme&utm_campaign=one_drive)
 
 ### 🤝 **Compatibility**
 
@@ -301,6 +309,10 @@ Yes, you can archive any file or folder as a ZIP directly from the plugin interf
 = Does the plugin work like an FTP client? =
 Yes, the plugin offers a similar experience to FTP clients. You can preview, edit, and manage files or folders directly from your WordPress dashboard without using any external software.
 
+= Where do I report security bugs found in this plugin? =
+
+Please report security bugs found in the source code of the Advanced File Manager Pro plugin through the [Patchstack Vulnerability Disclosure  Program](https://patchstack.com/database/vdp/undefined). The Patchstack team will assist you with verification, CVE assignment, and notify the developers of this plugin.
+
 = How can I get support if I encounter issues with Advanced File Manager? =
 If you face any issues, reach out to our expert support team. You can contact us directly via the support page for prompt assistance.
 
@@ -337,6 +349,9 @@ Yes, you can open files in a pop-up editor, make changes, and save them directly
 = Can I switch between different views in the file manager? =
 Yes in the pro version of the plugin, you can toggle between grid view and list view based on your preferences for easier file navigation.
 
+= Do I need technical knowledge to use the AI Agent? =
+No. The AI Agent is designed to be beginner-friendly. Even if you are not an expert in coding, you can rely on the AI for suggestions and code assistance.
+    
 = Does the plugin support multilingual sites? =
 Yes, the plugin offers multilingual support, which makes it suitable for websites with global audiences.
 
@@ -360,6 +375,12 @@ You can report security bugs through the Patchstack Vulnerability Disclosure Pro
 
 
 == Changelog ==
+= 5.4.2 - August 26, 2025 =
+* Tweak - Repositioning of AI Integration admin menu.
+
+= 5.4.1 - July 13, 2025 =
+* Tweak - Added demo screen.
+
 = 5.4.0 - July 29, 2025 =
 * New - Introducing Debug feature, which will not save the code if it contains error.
 * Fix - Download progress bar was showing incorrect progress.

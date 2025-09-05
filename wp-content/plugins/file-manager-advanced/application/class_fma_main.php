@@ -207,7 +207,7 @@ class class_fma_main {
 	 */
 	public function admin_init() {
 		$is_pro_version = get_option( 'active_plugins', array() );
-		if ( ! in_array( 'file-manager-advanced-pro/file-manager-advanced-shortcode.php', $is_pro_version, true ) ) {
+		if ( in_array( 'file-manager-advanced-pro/file-manager-advanced-shortcode.php', $is_pro_version, true ) ) {
 			require_once FMAFILEPATH . 'application/logs/class-filelogs.php';
 		}
 	}

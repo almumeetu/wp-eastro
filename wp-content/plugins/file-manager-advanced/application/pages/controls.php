@@ -27,6 +27,11 @@ $cm_themes = class_fma_main::cm_themes();
                 'slug'  => 'notifications',
                 'icon'  => '<i class="dashicons dashicons-megaphone"></i>',
             ),
+            'ai' => array(
+                'title' => __( 'AI Integration', 'afm-pro' ),
+                'slug'  => 'ai',
+                'icon'  => '<img src="' . plugins_url( '../assets/images/codepilot.png', __FILE__ ) . '" style="height:16px;vertical-align:middle;border-radius:50%;" alt="Code Pilot" />',
+            ),
         )
     );
 
@@ -315,3 +320,4 @@ $cm_themes = class_fma_main::cm_themes();
     ?>
 
             </div>
+
