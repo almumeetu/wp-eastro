@@ -1,0 +1,182 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+    START: Grow CSS
+----------------------------------------*/
+.grow-item{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 80px 1fr;
+    grid-gap: 30px;
+    @include breakpoint(sm){
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .grow-icon{
+        background: radial-gradient(50% 5688.89% at 50% 50%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+        border: 1px solid #3E3E3E;
+        height: 80px;
+        width: 80px;
+        @include flex-center;
+        border-radius: 50%;
+        svg{
+            color: var(--rr-color-common-white);
+        }
+    }
+    .grow-content{
+        .top-content{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            .title{
+                font-size: 40px;
+                line-height: 1;
+                margin-bottom: 0;
+                @include breakpoint(lg){
+                    font-size: 30px;
+                }
+                .odometer-auto-theme{
+                    font-family: inherit;
+                    line-height: 1;
+                }
+                .odometer-digit-spacer{
+                    padding-right: 2px;
+                }
+            }
+            p{
+                color: var(--rr-color-common-white);
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 0;
+                margin-left: 10px;
+            }
+        }
+        p{
+            @include breakpoint(lg){
+                br{
+                    display: none;
+                }
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+
+// Growth Area
+
+.growth-content{
+    max-width: 590px;
+    width: 100%;
+    .growth-items{
+        margin-bottom: 50px;
+        .growth-item{
+            display: grid;
+            grid-template-columns: 60px 1fr;
+            grid-gap: 30px;
+            &:not(:last-of-type){
+                margin-bottom: 30px;
+                padding-bottom: 30px;
+                border-bottom: 1px solid #1E2228;
+            }
+            @include breakpoint(sm){
+                grid-template-columns: 1fr;
+            }
+            .number{
+                background-color: var(--rr-color-bg-1);
+                color: var(--rr-color-common-white);
+                height: 60px;
+                width: 60px;
+                @include flex-center;
+                border-radius: 50%;
+                border: 1px solid #1E2228;
+            }
+            .content{
+                .title{
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-bottom: 15px;
+                }
+                p{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.growth-img-wrap{
+    max-width: 690px;
+    width: 100%;
+    height: 624px;
+    position: relative;
+    @include breakpoint(md){
+        margin-top: 40px;
+    }
+    @include breakpoint(sm){
+        height: 450px;
+    }
+    .growth-img-1{
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 553px;
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .growth-img-2{
+        max-width: 246px;
+        width: 100%;
+        height: 246px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 7px solid var(--rr-color-bg-1);
+        }
+    }
+    .growth-text{
+        position: absolute;
+        bottom: 20%;
+        right: -50%;
+        @include breakpoint(md){
+            right: -10%;
+        }
+        @include breakpoint(sm){
+            display: none;
+        }
+        span{
+            font-family: var(--rr-ff-heading);
+            color: var(--rr-color-theme-primary);
+            font-size: 150px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+.grow-section-2{
+    background-color: var(--rr-color-bg-1);
+    position: relative;
+    z-index: 1;
+    .shape{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+/* !END: Grow CSS */

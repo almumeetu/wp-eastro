@@ -1,0 +1,137 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+    START: Content CSS
+----------------------------------------*/
+
+.content-section{
+    position: relative;
+    z-index: 1;
+    .shape{
+        background: rgba(63, 90, 243, 0.1);
+        mix-blend-mode: normal;
+        filter: blur(400px);
+        width: 1204px;
+        height: 933px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+    .content-container{
+        max-width: 1630px;
+        width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+}
+
+.content-img-wrap{
+    height: 605px;
+    max-width: 745px;
+    width: 100%;
+    position: relative;
+    @include breakpoint(md){
+        margin-bottom: 40px;
+    }
+    @include breakpoint(sm){
+        height: 450px;
+    }
+    .content-img{
+        height: 605px;
+        max-width: 616px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include breakpoint(sm){
+            height: 450px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 8px solid #11151C;
+        }
+    }
+    .content-counter{
+        background-color: var(--rr-color-theme-primary);
+        display: grid;
+        align-items: center;
+        grid-template-columns: 40px 1fr;
+        grid-gap: 20px;
+        position: absolute;
+        left: 0;
+        bottom: 90px;
+        padding: 20px 30px;
+        border: 10px solid #11151C;
+        .icon{
+            color: var(--rr-color-common-white);
+            font-size: 46px;
+        }
+        .content{
+            .title{
+                font-family: var(--rr-ff-body);
+                font-size: 40px;
+                font-weight: 700;
+                margin-bottom: 5px;
+                line-height: 1;
+                .odometer-auto-theme{
+                    font-family: inherit;
+                    line-height: 1;
+                }
+            }
+            p{
+                color: var(--rr-color-common-white);
+                margin-bottom: 0;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.content-info{
+    max-width: 700px;
+    width: 100%;
+    .content-list{
+        li{
+            display: grid;
+            align-items: center;
+            grid-template-columns: 55px 1fr;
+            grid-gap: 20px;
+            &:not(:last-of-type){
+                margin-bottom: 15px;
+            }
+            .number{
+                background-color: var(--rr-color-bg-1);
+                color: var(--rr-color-common-white);
+                height: 55px;
+                width: 55px;
+                @include flex-center;
+                border-radius: 50%;
+                border: 1px solid #1E2228;
+            }
+            .list-info{
+                font-size: 18px;
+                color: var(--rr-color-text-body);
+                font-weight: 400;
+                line-height: 1.7;
+                span{
+                    color: var(--rr-color-common-white);
+                    font-weight: 600;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .content-btn-wrap{
+        @include flex-vertical-center;
+        column-gap: 20px;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+}
+
+
+/* !END: Content CSS */

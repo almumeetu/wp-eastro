@@ -1,0 +1,297 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+    START: Request CSS
+----------------------------------------*/
+
+.req-wrap{
+    background-color: var(--rr-color-bg-1);
+    position: relative;
+    z-index: 1;
+    padding: 80px;
+    margin: 0;
+    @include breakpoint(md){
+        padding: 60px 40px;
+    }
+    @include breakpoint(sm){
+        padding: 40px 20px;
+    }
+    &>div{
+        padding: 0;
+    }
+    .req-img{
+        height: 100%;
+        width: 39%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        @include breakpoint(md){
+            display: none;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.request-content{
+    padding-left: 20px;
+    @include breakpoint(md){
+        padding-left: 0;
+    }
+    .request-form{
+        .form-item{
+            label{
+                color: #8B8E92;
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 15px;
+            }
+            .form-control{
+                background-color: #0C0D10;
+                color: var(--rr-color-common-white);
+                font-size: 14px;
+                font-weight: 400;
+                padding: 15px 20px;
+                border: 1px solid #1E2228;
+                box-shadow: none;
+                margin-bottom: 20px;
+                @include tp-placeholder{
+                    color: #515357;
+                }
+            }
+        }
+        .form-btn{
+            margin-top: 20px;
+        }
+    }
+}
+
+
+// Req Wrap 2
+
+.req-wrap-2{
+    .request-content-2{
+        background-color: var(--rr-color-bg-1);
+        position: relative;
+        z-index: 1;
+        padding: 80px;
+        @include breakpoint(md){
+            padding: 40px 20px;
+        }
+    }
+}
+
+.req-img-2{
+    height: 100%;
+    max-width: 515px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    @include breakpoint(md){
+        height: 713px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    @include breakpoint(sm){
+        height: 450px;
+    }
+    .req-man{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .req-man-shape{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        img{
+            height: 100%;
+        }
+    }
+}
+
+
+.req-wrap-3{
+    padding: 50px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    border: 1px solid #2D343E;
+    @include breakpoint(md){
+        padding-right: 0;
+    }
+    .request-content{
+        padding-left: 60px;
+        @include breakpoint(md){
+            padding: 50px;
+            border-top: 1px solid #2D343E;
+        }
+        @include breakpoint(sm){
+            padding: 50px 20px;
+        }
+        .request-form{
+            .form-item{
+                margin-bottom: 40px;
+                label{
+                    color: var(--rr-color-common-white);
+                }
+                .form-control{
+                    background-color: transparent;
+                    border: 1px solid #2D343E;
+                    border-radius: 0;
+                    color: #B0B2B7;
+                    font-size: 16px;
+                    @include tp-placeholder{
+                        color: #B0B2B7;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.req-contact{
+    border-right: 1px solid #2D343E;
+    @include breakpoint(md){
+        border: none;
+    }
+}
+
+.req-contact-item{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 80px 1fr;
+    grid-gap: 25px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+    @include breakpoint(sm){
+        grid-template-columns: 1fr;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 50px;
+    }
+    &:not(:last-of-type){
+        padding-bottom: 40px;
+        border-bottom: 1px solid #2D343E;
+    }
+    &:not(:first-of-type){
+        padding-top: 50px;
+    }
+    .icon{
+        color: var(--rr-color-common-white);
+        font-size: 20px;
+        height: 80px;
+        width: 80px;
+        border: 1px solid #2D343E;
+        @include flex-center;
+    }
+    .content{
+        .title{
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        p{
+            margin-bottom: 0;
+        }
+        ul{
+            list-style: none;
+        }
+    }
+    &.item-2{
+        padding-bottom: 50px;
+    }
+}
+
+//S-work request-section-13
+.request-section-13{
+    position: relative;
+    .shapes{
+        .shape-1{
+            position: absolute;
+            top: -1167px;
+            right: -889px;
+        }
+    }
+    .req-wrap{
+        background: #090C11;
+        border: 1px solid #2D343E;
+        position: relative;
+        z-index: 1;
+        padding: 30px;
+        margin: 0;
+        @include breakpoint(md){
+            padding: 10px;
+        }
+        .req-img{
+            height: 590px;
+            width: 600px;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            z-index: -1;
+        }
+        .request-content{
+            margin-left: 77px;
+            padding-left: 0;
+            background-color: var(--rr-color-bg-1);
+            border: 1px solid #2D343E;
+            @include breakpoint(md){
+                margin-left: 0px;
+            }
+            .form-title{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+                color: var(--rr-color-common-white);
+                padding: 35px 50px;
+                @include breakpoint(md){
+                    padding: 25px 20px;
+                }
+            }
+            .request-form{
+                border-top: 1px solid #2D343E;
+                padding: 33px 50px 50px 50px;
+                @include breakpoint(md){
+                    padding: 33px 10px 50px 10px;
+                }
+                .form-group{
+                    .form-item{
+                        label{
+                            margin-bottom: 6px;
+                        }
+                        .form-control{
+                            background-color: transparent;
+                            border-color: #2D343E;
+                            border-radius: 0;
+                            padding: 13.5px 20px;
+                        }
+                        .address{
+                            height: 100px;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                .form-btn{
+                    margin-top: 15px;
+                    .rr-primary-btn{
+                        width: 100%;
+                        justify-content: center;
+                        padding: 19.5px 30px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+/* !END: Request CSS */

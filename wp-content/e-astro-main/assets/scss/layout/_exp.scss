@@ -1,0 +1,294 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+    START: Exp CSS
+----------------------------------------*/
+
+.exp-content {
+    padding-right: 20px;
+    @include breakpoint(md) {
+        padding-right: 0;
+    }
+    .skills-items {
+        list-style: none;
+        margin-top: 30px;
+        .skills-item {
+            overflow: hidden;
+            &:not(:last-of-type) {
+                margin-bottom: 30px;
+            }
+            .title {
+                font-family: var(--rr-ff-body);
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+            .progress {
+                height: 4px;
+                overflow: visible;
+                .progress-bar {
+                    background-color: var(--rr-color-theme-primary);
+                    border-radius: 20px;
+                    position: relative;
+                    overflow: visible;
+                    span {
+                        position: absolute;
+                        top: -35px;
+                        right: -15px;
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: var(--rr-color-common-white);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.exp-img {
+    height: 100%;
+    max-width: 678px;
+    width: 100%;
+    padding-left: 20px;
+    @include breakpoint(md) {
+        padding-left: 0;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    @include breakpoint(sm) {
+        height: 350px;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: saturate(0) contrast(110%);
+    }
+}
+
+
+// Exp 2
+
+.exp-section-2{
+    background-color: var(--rr-color-bg-1);
+    position: relative;
+    z-index: 1;
+    .shapes{
+        .shape{
+            position: absolute;
+            z-index: -1;
+            &.shape-1{
+                position: absolute;
+                top: 30%;
+                right: 80px;
+            }
+            &.shape-2{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+.exp-content-2{
+    margin-right: 40px;
+    @include breakpoint(md){
+        margin-bottom: 40px;
+        margin-right: 0;
+    }
+    .skills-items{
+        .skills-item{
+            .progress{
+                height: 8px;
+                .progress-bar{
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+}
+
+.exp-img-wrap{
+    position: relative;
+    max-width: 503px;
+    width: 100%;
+    height: 537px;
+    margin-left: 40px;
+    @include breakpoint(lg){
+        margin-left: 0;
+    }
+    @include breakpoint(md){
+        margin: 0 auto;
+    }
+    .exp-img-1{
+        height: 274px;
+        max-width: 243px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 120px 0 120px 0;
+        overflow: hidden;
+    }
+    .exp-img-2{
+        height: 203px;
+        max-width: 203px;
+        width: 100%;
+        position: absolute;
+        top: 35px;
+        right: 35px;
+        border-radius: 150px 150px 150px 0;
+        overflow: hidden;
+        @include breakpoint(sm){
+            display: none;
+        }
+    }
+    .exp-img-3{
+        height: 203px;
+        max-width: 203px;
+        width: 100%;
+        position: absolute;
+        bottom: 35px;
+        left: 35px;
+        border-radius: 150px 150px 150px 0;
+        overflow: hidden;
+    }
+    .exp-img-4{
+        height: 274px;
+        max-width: 243px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-radius: 120px 0 120px 0;
+        overflow: hidden;
+        @include breakpoint(sm){
+            display: none;
+        }
+    }
+}
+
+//exp-section-14 S-work
+.exp-section-14{
+    background-color: #16181D;
+    position: relative;
+    .shape-wrapper{
+        .shape-1{
+            position: absolute;
+            width: 2214px;
+            height: 368.04px;
+            top: -335px;
+            left: -211px;
+            background: rgba(240, 242, 248, 0.012);
+            transform: rotate(-21.2deg);
+        }
+        .shape-2{
+            position: absolute;
+            width: 2214px;
+            height: 356.04px;
+            left: -180.43px;
+            top: 203px;
+            background: rgba(240, 242, 248, 0.012);
+            transform: rotate(-21.2deg);
+        }
+        .shape-3{
+            position: absolute;
+            width: 2214px;
+            height: 439.78px;
+            left: 200.72px;
+            bottom: -110px;
+            background: rgba(240, 242, 248, 0.012);
+            transform: rotate(-21.2deg);
+        }
+    }
+    .exp-content{
+        margin-right: 0;
+        padding-right: 0;
+        .section-heading{
+            .sub-heading{
+                margin-bottom: 10px;
+            }
+            .section-title{
+
+            }
+        }
+        p{
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        .skills-items {
+            margin-top: 59px;
+            .skills-item {
+                &:not(:last-of-type) {
+                    margin-bottom: 30px;
+                }
+                .progress {
+                    background-color: transparent;
+                    border: 1px solid #2D343E;
+                    height: 16px;
+                    overflow: visible;
+                    border-radius: 0;
+                    padding: 5px 0px 5px 5px;
+                    .progress-bar {
+                        background-color: var(--rr-color-theme-primary);
+                        border-radius: 0;
+                        position: relative;
+                        overflow: visible;
+                        span {
+                            position: absolute;
+                            top: -35px;
+                            right: -15px;
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: var(--rr-color-common-white);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .exp-content-2{
+        margin-right: 0;
+    }
+    .exp-img-wrap{
+        margin-left: 78px;
+        max-width: 600px;
+        @include breakpoint(sm){
+            margin-left: 0;
+        }
+        .exp-img-1{
+            max-width: 290px;
+        }
+        .exp-img-2{
+            max-width: 290px;
+            height: 274px;
+            border-radius: 150px 150px 150px 0px;
+            top: 0;
+            right: 0;
+
+        }
+        .exp-img-3{
+            max-width: 290px;
+            height: 311px;
+            left: 0;
+            bottom: -64px;
+            border-radius: 150px 0px 150px 150px;
+        }
+        .exp-img-4{
+            border-radius: 120px 0px;
+            max-width: 290px;
+            height: 311px;
+            bottom: -64px;
+        }
+    }
+}
+
+/* !END: Exp CSS */

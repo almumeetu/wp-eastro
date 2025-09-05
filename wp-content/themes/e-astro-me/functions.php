@@ -135,19 +135,45 @@ function e_astro_me_widgets_init() {
 add_action( 'widgets_init', 'e_astro_me_widgets_init' );
 
 /**
- * Enqueue scripts and styles.
+ * Theme Assets Enqueue
  */
-function e_astro_me_scripts() {
-	wp_enqueue_style( 'e-astro-me-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'e-astro-me-style', 'rtl', 'replace' );
+function e_astro_me_enqueue_scripts() {
+    $theme_version = wp_get_theme()->get('Version');
 
-	wp_enqueue_script( 'e-astro-me-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+    // === CSS ===
+    wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), $theme_version, 'all');
+    wp_enqueue_style('carousel-ticker', get_template_directory_uri() . '/assets/css/carouselTicker.css', array(), $theme_version, 'all');
+    wp_enqueue_style('fontawesome', get_template_directory_uri() . '/assets/css/fontawesome.min.css', array(), $theme_version, 'all');
+    wp_enqueue_style('nice-select', get_template_directory_uri() . '/assets/css/nice-select.css', array(), $theme_version, 'all');
+    wp_enqueue_style('odometer', get_template_directory_uri() . '/assets/css/odometer.min.css', array(), $theme_version, 'all');
+    wp_enqueue_style('swiper', get_template_directory_uri() . '/assets/css/swiper.min.css', array(), $theme_version, 'all');
+    wp_enqueue_style('venobox', get_template_directory_uri() . '/assets/css/venobox.min.css', array(), $theme_version, 'all');
+    wp_enqueue_style('main-style', get_template_directory_uri() . '/assets/css/main.css', array(), $theme_version, 'all');
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+    // === JS (Vendor First) ===
+    wp_enqueue_script('jquery'); // WP bundled jQuery
+    
+    wp_enqueue_script('bootstrap', get_template_directory_uri() . '/assets/js/vendor/bootstrap-bundle.js', array('jquery'), $theme_version, true);
+    wp_enqueue_script('gsap', get_template_directory_uri() . '/assets/js/vendor/gsap.min.js', array(), $theme_version, true);
+    wp_enqueue_script('imagesloaded', get_template_directory_uri() . '/assets/js/vendor/imagesloaded-pkgd.js', array('jquery'), $theme_version, true);
+    wp_enqueue_script('carousel-ticker', get_template_directory_uri() . '/assets/js/vendor/jquery.carouselTicker.js', array('jquery'), $theme_version, true);
+    wp_enqueue_script('isotope', get_template_directory_uri() . '/assets/js/vendor/jquery.isotope.js', array('jquery'), $theme_version, true);
+    wp_enqueue_script('meanmenu', get_template_directory_uri() . '/assets/js/vendor/meanmenu.js', array('jquery'), $theme_version, true);
+    wp_enqueue_script('nice-select', get_template_directory_uri() . '/assets/js/vendor/nice-select.js', array('jquery'), $theme_version, true);
+    wp_enqueue_script('odometer', get_template_directory_uri() . '/assets/js/vendor/odometer.min.js', array('jquery'), $theme_version, true);
+    wp_enqueue_script('scroll-smoother', get_template_directory_uri() . '/assets/js/vendor/scroll-smoother.js', array('jquery'), $theme_version, true);
+    wp_enqueue_script('scroll-trigger', get_template_directory_uri() . '/assets/js/vendor/scroll-trigger.min.js', array('jquery'), $theme_version, true);
+    wp_enqueue_script('split-type', get_template_directory_uri() . '/assets/js/vendor/split-type.min.js', array('jquery'), $theme_version, true);
+    wp_enqueue_script('swiper', get_template_directory_uri() . '/assets/js/vendor/swiper.min.js', array('jquery'), $theme_version, true);
+    wp_enqueue_script('venobox', get_template_directory_uri() . '/assets/js/vendor/venobox.min.js', array('jquery'), $theme_version, true);
+    wp_enqueue_script('waypoints', get_template_directory_uri() . '/assets/js/vendor/waypoints.min.js', array('jquery'), $theme_version, true);
+
+    // === Main JS ===
+    wp_enqueue_script('contact', get_template_directory_uri() . '/assets/js/contact.js', array('jquery'), $theme_version, true);
+    wp_enqueue_script('slider', get_template_directory_uri() . '/assets/js/slider.js', array('jquery'), $theme_version, true);
+    wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), $theme_version, true);
 }
-add_action( 'wp_enqueue_scripts', 'e_astro_me_scripts' );
+add_action('wp_enqueue_scripts', 'e_astro_me_enqueue_scripts');
 
 /**
  * Implement the Custom Header feature.
