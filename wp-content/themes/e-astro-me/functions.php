@@ -202,3 +202,73 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+/**
+ * Register Director Custom Post type.
+ */
+function saikat_register_director_cpt() {
+    $labels = array(
+        'name'          => 'Directors',
+        'singular_name' => 'Director',
+        'menu_name'     => 'Directors',
+    );
+
+    $args = array(
+        'labels'       => $labels,
+        'public'       => true,
+        'show_ui'      => true,
+        'menu_icon'    => 'dashicons-groups',
+        'supports'     => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+        'has_archive'  => false,
+        'rewrite'      => array( 'slug' => 'directors' ),
+        'show_in_rest' => true, 
+    );
+
+    register_post_type( 'director', $args );
+}
+add_action( 'init', 'saikat_register_director_cpt' );
+
+
+/**
+ * Add Custom Field (meta Box) for director list.
+ */
+function saikat_add_director_meta_box() {
+    add_meta_box(
+        'director_details',
+        'Director Details',
+        'saikat_director_meta_callback',
+        'director',
+        'normal',
+        'high'
+    );
+}
+add_action( 'add_meta_boxes', 'saikat_add_director_meta_box' );
+
+function saikat_director_meta_callback( $post ) {
+    $position = get_post_meta( $post->ID, 'director_position', true );
+    $facebook = get_post_meta( $post->ID, 'director_facebook', true );
+    $twitter  = get_post_meta( $post->ID, 'director_twitter', true );
+    ?>
+    <p><label>Position</label><br>
+    <input type="text" name="director_position" value="<?php echo esc_attr($position); ?>" style="width:100%;"></p>
+
+    <p><label>Facebook URL</label><br>
+    <input type="url" name="director_facebook" value="<?php echo esc_url($facebook); ?>" style="width:100%;"></p>
+
+    <p><label>Twitter URL</label><br>
+    <input type="url" name="director_twitter" value="<?php echo esc_url($twitter); ?>" style="width:100%;"></p>
+    <?php
+}
+
+function saikat_save_director_meta( $post_id ) {
+    if( isset($_POST['director_position']) ) {
+        update_post_meta( $post_id, 'director_position', sanitize_text_field($_POST['director_position']) );
+    }
+    if( isset($_POST['director_facebook']) ) {
+        update_post_meta( $post_id, 'director_facebook', esc_url_raw($_POST['director_facebook']) );
+    }
+    if( isset($_POST['director_twitter']) ) {
+        update_post_meta( $post_id, 'director_twitter', esc_url_raw($_POST['director_twitter']) );
+    }
+}
+add_action( 'save_post', 'saikat_save_director_meta' );
